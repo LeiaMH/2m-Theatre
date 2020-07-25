@@ -1,0 +1,361 @@
+/*GENERAL*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #363430;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+/*HERO IMAGE*/
+section#picture1 {
+  background-image: url(./img/acting.jpg);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  height: 100vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#subtitle {
+  z-index: 5;
+  position: absolute;
+  left: 22%;
+  top: 40%;
+  text-align: center;
+  -webkit-filter: blur(0.15px);
+          filter: blur(0.15px);
+}
+
+div#subtitle h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  letter-spacing: .03em;
+  font-weight: 800;
+  font-size: 4em;
+  color: #eff1f3;
+}
+
+div#subtitle h2 {
+  font-family: "Prata", serif;
+  font-size: 1.75em;
+  color: #eff1f3;
+  padding: 15px;
+}
+
+/*NAVBAR*/
+section#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 8;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #363430;
+  color: #eff1f3;
+  font-family: "Prata", serif;
+  -webkit-box-shadow: 0px 2px 4px #222;
+          box-shadow: 0px 2px 4px #222;
+}
+
+section#navbar ul {
+  padding-top: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-large;
+}
+
+section#navbar ul li#logo {
+  font-size: medium;
+  border: 2px solid #02936c;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #363430;
+}
+
+section#navbar ul a {
+  text-decoration: none;
+  color: #eff1f3;
+}
+
+section#navbar ul a:hover {
+  color: #02936c;
+}
+
+section#navbar ul img {
+  width: 50px;
+}
+
+/*MISSION*/
+section#mission {
+  background-color: #eff1f3;
+  color: #363430;
+  font-family: "Prata", serif;
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5;
+}
+
+section#mission div.content-frame {
+  width: 75%;
+  margin: 100px;
+  padding: 60px;
+  background-color: #a4d7c7;
+  -webkit-box-shadow: 0px 0px 30px #555;
+          box-shadow: 0px 0px 30px #555;
+  border-radius: 5px;
+}
+
+section#mission h2 {
+  font-family: "Prata", serif;
+  padding-bottom: 10px;
+}
+
+section#mission p {
+  font-size: large;
+  font-family: "Raleway", sans-serif;
+}
+
+/*PICTURES*/
+section#picture2 {
+  background-image: url(./img/park.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+/*THE TEAM*/
+section#team {
+  background-color: #363430;
+  color: #363430;
+  font-family: "Prata", serif;
+  padding: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#team div.content-frame {
+  width: 75%;
+  margin: 100px;
+  padding: 60px;
+  background-color: rgba(239, 241, 243, 0.85);
+  -webkit-box-shadow: 0px 0px 30px 3px #000;
+          box-shadow: 0px 0px 30px 3px #000;
+  border-radius: 5px;
+}
+
+section#team div.person {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#team div.person p {
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  width: 500px;
+  line-height: 1.5;
+  font-size: large;
+}
+
+section#team div.person p span {
+  color: #02936c;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+section#team div.person div.pic {
+  border: 2px solid #eff1f3;
+  border-radius: 5px;
+  width: 250px;
+  height: 300px;
+  margin: 20px 0;
+  -webkit-box-shadow: 4px 4px 8px #222;
+          box-shadow: 4px 4px 8px #222;
+}
+
+section#team div.person div.pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*SHOWS*/
+section#shows {
+  background-color: #a4d7c7;
+  color: #363430;
+  font-family: "Prata", serif;
+  font-size: large;
+  padding: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+section#shows div.content-frame {
+  width: 75%;
+  margin: 100px;
+  padding: 60px;
+  background-color: rgba(239, 241, 243, 0.75);
+  -webkit-box-shadow: 0px 0px 30px #555;
+          box-shadow: 0px 0px 30px #555;
+  border-radius: 5px;
+}
+
+section#shows ul {
+  padding: 20px;
+}
+
+section#shows ul li {
+  font-family: "Raleway", sans-serif;
+  padding: 5px;
+  font-size: large;
+}
+
+/*PICTURES*/
+section#picture3 {
+  background-image: url(./img/actors.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+/*CONTACTS*/
+section#contacts {
+  background-color: #a4d7c7;
+  color: #363430;
+  font-family: "Prata", serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#contacts div.content-frame {
+  z-index: 2;
+  width: 75%;
+  margin: 30px;
+  padding: 30px;
+}
+
+section#contacts h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+  font-size: 2em;
+}
+
+section#contacts ul {
+  list-style: none;
+  text-decoration: none;
+  font-size: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section#contacts ul li a {
+  color: #363430;
+}
+
+section#contacts ul li a:hover {
+  color: #02936c;
+}
+
+/*FOOTER*/
+section#footer {
+  z-index: 8;
+  background-color: #363430;
+  color: #eff1f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: none;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.u--slideUp {
+  -webkit-animation: slideUp 2s;
+  animation: slideUp 2s;
+}
+/*# sourceMappingURL=styles.css.map */
