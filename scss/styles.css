@@ -333,29 +333,4 @@ section#footer {
   position: absolute;
   width: 100%;
 }
-
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translate3d(0, 100%, 0);
-  }
-  100% {
-    -webkit-transform: none;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-  }
-  100% {
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
-.u--slideUp {
-  -webkit-animation: slideUp 2s;
-  animation: slideUp 2s;
-}
 /*# sourceMappingURL=styles.css.map */
