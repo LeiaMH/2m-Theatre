@@ -3,8 +3,8 @@ $dark-text:#363430;
 $mid:#2F3E46;
 $light:#eff1f3;
 $accent:#01d099;
-$heading-font: 'Prata', serif;
-$text-font:'Raleway', sans-serif;
+$heading-font: 'Libre Franklin', sans-serif;//'Prata', serif;
+$text-font: 'Libre Franklin', sans-serif;//'Raleway', sans-serif;
 
 
 //'Raleway', sans-serif;
@@ -102,6 +102,7 @@ section#mission{
     background-color: $mid;
     color: $dark-text;
     font-family: $heading-font;
+    padding: 30px;
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -151,13 +152,13 @@ section#team{
         border-radius: 5px;
         }  
         div.person{
-            margin: 20px 0px;
+            margin: 30px 0px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             p{
                 font-family: $text-font;
-                padding: 10px;
+                padding: 5px;
                 width: 500px;
                 line-height: 1.5;
                 font-size: large;
@@ -171,8 +172,9 @@ section#team{
                 border: 2px solid $light;
                 border-radius: 5px;
                 width: 250px;
+                min-width: 200px;
                 height: 300px;
-                margin: 20px 0;
+                min-height: 250px;
                 box-shadow: 4px 4px 8px #222;
                 img{
                     object-fit: cover;  
@@ -196,7 +198,7 @@ section#shows{
     min-height: 100vh;
     div.content-frame{
         width: 75%;
-        margin: 100px;
+        margin: 100px 100px 0px 100px;
         padding: 80px;
         background-color: rgba(239, 241, 243, .85);
         box-shadow: 0px 0px 30px 3px #000;
@@ -206,7 +208,7 @@ section#shows{
         padding: 20px;
         li{
             font-family: $text-font;
-            padding: 5px;
+            padding: 10px;
             font-size: large;
         }
     }
@@ -262,7 +264,7 @@ section#contacts{
 section#footer{
     z-index: 8;
     background-color: rgba(239, 241, 243, .85);
-    color: $dark;
+    color: $dark-text;
     font-family: $text-font;
     font-weight: 500;
     padding: 20px;
@@ -270,4 +272,111 @@ section#footer{
     justify-content: center; 
     position: absolute;
     width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    body section#mission div.content-frame{
+        width: 80%;
+        margin: 20px;
+        padding: 70px;
+    }
+    body section#team div.content-frame{
+        width: 80%;
+        margin: 20px;
+        padding: 70px;
+    }
+    body section#shows div.content-frame{
+        width: 80%;
+        margin: 20px;
+        padding: 70px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body section#mission div.content-frame{
+        width: 85%;
+        margin: 15px;
+        padding: 60px;
+    }
+    body section#team div.content-frame{
+        width: 85%;
+        margin: 15px;
+        padding: 60px;
+    }
+    body section#shows div.content-frame{
+        width: 85%;
+        margin: 15px;
+        padding: 60px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body section#mission div.content-frame{
+        width: 90%;
+        margin: 10px;
+        padding: 50px;
+    }
+    body section#team div.content-frame{
+        width: 90%;
+        margin: 10px;
+        padding: 50px;
+        div.person p{
+            padding: 0 20px;
+        }
+    }
+    body section#shows div.content-frame{
+        width: 90%;
+        margin: 10px;
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    div#subtitle div#sub-wrapper{
+        h1{
+            font-size: 3em;
+    }
+        h2{
+            font-size: 1.5em;
+    }
+    }
+    section#navbar ul{
+        font-size: large;
+    }
+
+    section#mission div.content-frame p{
+        font-size: medium;
+    }
+
+    body section#team div.content-frame div.person{
+        
+        p{
+        font-size: medium;
+        }        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body section#team div.content-frame div.person{
+        flex-direction: column;
+        align-items: center;
+        p{
+        width: auto;
+        padding: 10px 0;
+        font-size: medium;
+        }
+        div.pic{
+            width: auto;
+            height: 500px;
+            max-height: 500px;
+        }  
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body section#team div.content-frame div.person div.pic{
+        width: auto;
+        height: 400px;
+        max-height: 400px;
+    }
 }
