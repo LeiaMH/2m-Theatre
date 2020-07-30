@@ -79,8 +79,8 @@ section#navbar {
 }
 
 section#navbar ul {
-  padding-top: 20px;
   list-style: none;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,16 +97,21 @@ section#navbar ul li#logo {
   font-size: medium;
   border: 2px solid #01d099;
   border-radius: 50%;
-  padding: 8px;
+  padding: 5px;
   background-color: #2F3E46;
 }
 
 section#navbar ul a {
+  height: 100%;
   text-decoration: none;
+  font-size: large;
   color: #eff1f3;
+  -webkit-transition: font-weight .6s, color .6s;
+  transition: font-weight .6s, color .6s;
 }
 
 section#navbar ul a:hover {
+  font-weight: 700;
   color: #01d099;
 }
 
@@ -116,7 +121,7 @@ section#navbar ul img {
 
 /*MISSION*/
 section#mission {
-  background-color: #2F3E46;
+  background-image: #2F3E46;
   color: #363430;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
@@ -321,6 +326,8 @@ section#contacts ul {
 
 section#contacts ul li a {
   color: #eff1f3;
+  -webkit-transition: color .6s;
+  transition: color .6s;
 }
 
 section#contacts ul li a:hover {

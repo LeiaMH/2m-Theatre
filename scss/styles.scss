@@ -1,4 +1,4 @@
-$dark:#2F3E46;    //363430;
+$dark: #2F3E46;
 $dark-text:#363430;
 $mid:#2F3E46;
 $light:#eff1f3;
@@ -71,8 +71,8 @@ section#navbar{
     font-family: $heading-font;
     box-shadow: 0px 2px 4px #222;
     ul{
-        padding-top: 20px;
         list-style: none;
+        height: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -81,14 +81,18 @@ section#navbar{
             font-size: medium;
             border: 2px solid $accent;
             border-radius: 50%;
-            padding: 8px;
+            padding: 5px;
             background-color: $dark;
         }
         a{
+            height: 100%;
             text-decoration: none;
+            font-size: large;
             color: $light;
+            transition: font-weight .6s, color .6s;
         }
         a:hover{
+            font-weight: 700;
             color: $accent;
         }
         img{
@@ -99,7 +103,7 @@ section#navbar{
 
 /*MISSION*/
 section#mission{
-    background-color: $mid;
+    background-image: $dark;
     color: $dark-text;
     font-family: $heading-font;
     padding: 30px;
@@ -250,7 +254,8 @@ section#contacts{
         justify-content: space-evenly; 
         li{
             a{
-            color: $light;   
+            color: $light;
+            transition: color .6s;  
             }
             a:hover{
             color: $accent;  
