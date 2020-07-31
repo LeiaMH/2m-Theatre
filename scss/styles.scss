@@ -361,7 +361,11 @@ section#footer{
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 740px) {
+    section#navbar ul li a{
+        font-size: small;
+    }
+
     body section#team div.content-frame div.person{
         flex-direction: column;
         align-items: center;
@@ -376,6 +380,51 @@ section#footer{
             max-height: 500px;
         }  
     }
+
+    body section#mission{
+        padding: 0;
+        div.content-frame{
+            width: 100%;
+            margin: 0px;
+            padding: 50px;
+            border-radius: 0;
+        } 
+    }
+    body section#team {
+        padding: 0;
+        div.content-frame{
+            width: 100%;
+            margin: 0px;
+            padding: 50px;
+            border-radius: 0;
+            div.person p{
+                padding: 20 0px;
+            }
+        }
+    }
+
+    body section#shows{
+        padding: 0;
+        div.content-frame{
+            width: 100%;
+            margin: 0px;
+            padding: 50px;
+            border-radius: 0;
+        }
+    } 
+}
+
+@media only screen and (max-width: 660px) {
+    body section#mission div.content-frame{
+        padding: 20px;
+    }
+    body section#team div.content-frame{
+        padding: 20px;
+        
+    }
+    body section#shows div.content-frame{
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -384,4 +433,18 @@ section#footer{
         height: 400px;
         max-height: 400px;
     }
+}
+
+@media only screen and (max-width: 280px){
+    section#navbar ul li a{
+        font-size: x-small;
+    }
+    div#subtitle div#sub-wrapper{
+        h1{
+            font-size: 2em;
+    }
+        h2{
+            font-size: 1em;
+    }
+   }
 }
