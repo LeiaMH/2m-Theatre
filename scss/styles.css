@@ -357,6 +357,7 @@ section#contacts h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   padding-bottom: 50px;
   font-size: 2em;
 }
@@ -572,7 +573,7 @@ section#footer {
 
 @media only screen and (max-width: 380px) {
   body section#navbar {
-    height: 15vh;
+    height: 100px;
   }
   body section#navbar div.nav-container {
     display: -webkit-box;
@@ -582,7 +583,7 @@ section#footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
+    height: 50px;
   }
   body section#navbar div.nav-container div#logo div a {
     padding: 5px;
@@ -601,6 +602,12 @@ section#footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  body section#contacts div.content-frame ul li {
+    padding: 5px;
+  }
+  body section#contacts div.content-frame ul li a {
+    font-size: 32px;
   }
 }
 
