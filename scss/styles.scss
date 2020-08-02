@@ -5,6 +5,7 @@ $light:#eff1f3;
 $accent:#01d099;
 $heading-font: 'Libre Franklin', sans-serif;//'Prata', serif;
 $text-font: 'Libre Franklin', sans-serif;//'Raleway', sans-serif;
+$base-font-size: 16px;
 
 
 //'Raleway', sans-serif;
@@ -21,6 +22,79 @@ body{
 }
 html.sr .load-hidden {
     visibility: hidden;
+    scroll-behavior: smooth;
+}
+
+//-----------SECTIONS----------
+
+/*NAVBAR*/
+section#navbar{
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    width:100%;
+    background-color: $dark;
+    color: $light;
+    font-family: $heading-font;
+    box-shadow: 0px 2px 4px #222;
+    div.nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5%;
+        height: 50px;
+        div#logo{
+            display: inline-block;
+            height: inherit;
+            div{
+                height: inherit;
+                a{
+                    height: inherit;
+                    padding: 0 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    font-size: $base-font-size * 1.5;
+                    text-decoration: none;
+                    color: $light;
+                    transition: font-weight .6s, color .6s, background-color .6s;
+                }
+                a:hover{
+                    font-weight: 700;
+                    color: $dark;
+                    background-color: $light;
+                }
+            }
+        }
+        div#nav-list{
+            display: inline-block;
+            height: inherit;
+            width: 60%;
+            div#nav-list-container{
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+                height: inherit;
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
+                        padding: 0 20px;
+                        text-decoration: none;
+                        color: $light;
+                        transition: font-weight .6s, color .6s, background-color .6s;
+                    }
+                    a:hover{
+                        font-weight: 700;
+                        color: $dark;
+                        background-color: $light;
+                    }
+            
+            }
+        }
+    }
 }
 
 /*HERO IMAGE*/
@@ -57,48 +131,6 @@ div#subtitle{
              }
         }
     
-}
-
-/*NAVBAR*/
-section#navbar{
-    position: fixed;
-    z-index: 8;
-    top: 0;
-    width:100%;
-    height: 80px;
-    background-color: $dark;
-    color: $light;
-    font-family: $heading-font;
-    box-shadow: 0px 2px 4px #222;
-    ul{
-        list-style: none;
-        height: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: x-large;
-        li#logo{
-            font-size: medium;
-            border: 2px solid $accent;
-            border-radius: 50%;
-            padding: 5px;
-            background-color: $dark;
-        }
-        a{
-            height: 100%;
-            text-decoration: none;
-            font-size: large;
-            color: $light;
-            transition: font-weight .6s, color .6s;
-        }
-        a:hover{
-            font-weight: 700;
-            color: $accent;
-        }
-        img{
-            width: 50px;
-        }
-    }
 }
 
 /*MISSION*/
@@ -253,6 +285,7 @@ section#contacts{
         flex-wrap: wrap;
         justify-content: space-evenly; 
         li{
+            padding: 0 20px;
             a{
             color: $light;
             transition: color .6s;  
@@ -279,6 +312,9 @@ section#footer{
     width: 100%;
 }
 
+//------------
+
+/*MEDIA-QUERIES*/
 @media only screen and (max-width: 1300px) {
     body section#mission div.content-frame{
         width: 80%;
@@ -345,9 +381,6 @@ section#footer{
             font-size: 1.5em;
     }
     }
-    section#navbar ul{
-        font-size: large;
-    }
 
     section#mission div.content-frame p{
         font-size: medium;
@@ -361,11 +394,13 @@ section#footer{
     }
 }
 
-@media only screen and (max-width: 740px) {
-    section#navbar ul li a{
-        font-size: small;
+@media only screen and (max-width: 800px){
+    body section#navbar div.nav-container div#nav-list {
+        width: 75%;
     }
+}    
 
+@media only screen and (max-width: 740px) {
     body section#team div.content-frame div.person{
         flex-direction: column;
         align-items: center;
@@ -412,6 +447,19 @@ section#footer{
             border-radius: 0;
         }
     } 
+
+    body section#navbar div.nav-container{
+        div#logo{
+            a{
+                font-size: $base-font-size;
+             }
+        }
+        div#nav-list{
+            a{
+                font-size: $base-font-size * .75;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -433,12 +481,43 @@ section#footer{
         height: 400px;
         max-height: 400px;
     }
+    body section#navbar div.nav-container{
+        div#logo div a{
+            padding: 0 1%;
+        }
+        div#nav-list div#nav-list-container a{
+            padding: 0 1%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 380px){
+    body section#navbar {
+        height: 15vh;
+        div.nav-container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            div#logo div a{
+                padding: 5px;
+                border-bottom: 1.5px solid $light;
+                font-weight: 700;
+                font-size: $base-font-size * 1.25;
+            }
+            div#nav-list{
+                width: 100%;
+                div#nav-list-container a{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            } 
+        }
+    }
 }
 
 @media only screen and (max-width: 280px){
-    section#navbar ul li a{
-        font-size: x-small;
-    }
     div#subtitle div#sub-wrapper{
         h1{
             font-size: 2em;
@@ -446,5 +525,10 @@ section#footer{
         h2{
             font-size: 1em;
     }
+   }
+   body section#team div.content-frame div.person div.pic{
+    width: auto;
+    height: 250px;
+    max-height: 250px;
    }
 }

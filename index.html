@@ -10,22 +10,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/115e3f5e1b.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal({ reset: true });
-  </script>
   <title>2m Theatre</title>
 </head>
 <body>
 
   <section id='navbar'>
-    <ul>
-      <li><a href="#mission">Our Mission</a></li>
-      <li><a href="#team">The Team</a></li>
-      <li id="logo"><a href="#picture1">2mT</a></li>
-      <li><a href="#shows">Shows</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div id="logo">
+        <div>
+         <a href="#picture1">2mTheatre</a>
+        </div>
+      </div>
+      <div id="nav-list">
+        <div id="nav-list-container">
+          <a href="#mission">Our Mission</a>
+          <a href="#team">The Team</a>
+          <a href="#shows">Shows</a>
+          <a href="#contacts">Contact</a>
+        </div>
+      </div>
+    </div>
   </section>
 
 <section id="picture1">
@@ -129,10 +133,6 @@
 <section id="footer">
   <p>&copy; 2mTheatre</p>
 </section>
-
-<script>
-  ScrollReveal().reveal('.person', { delay: 300 });
-</script>
 
 <script src="./js/app.js" type="module"></script>
 </body>
