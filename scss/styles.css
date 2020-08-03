@@ -123,10 +123,10 @@ section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
 /*HERO IMAGE*/
 section#picture1 {
   background-image: url(./img/acting.jpg);
+  background-size: cover;
   -webkit-filter: blur(2px);
           filter: blur(2px);
   height: 100vh;
-  background-size: cover;
 }
 
 div#subtitle {
@@ -156,7 +156,7 @@ div#subtitle div#sub-wrapper {
 }
 
 div#subtitle div#sub-wrapper h1 {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   letter-spacing: .03em;
   font-weight: 800;
   font-size: 4em;
@@ -200,6 +200,7 @@ section#mission div.content-frame {
 section#mission h2 {
   font-family: "Libre Franklin", sans-serif;
   padding-bottom: 10px;
+  font-size: 1.75em;
 }
 
 section#mission p {
@@ -239,6 +240,10 @@ section#team div.content-frame {
   border-radius: 5px;
 }
 
+section#team h2 {
+  font-size: 1.75em;
+}
+
 section#team div.person {
   margin: 30px 0px;
   display: -webkit-box;
@@ -258,12 +263,12 @@ section#team div.person p {
   padding: 5px;
   width: 500px;
   line-height: 1.5;
-  font-size: large;
+  font-size: 1.25em;
 }
 
 section#team div.person p span {
   color: #0d6659;
-  font-size: x-large;
+  font-size: 1.25em;
   font-weight: 500;
 }
 
@@ -290,7 +295,6 @@ section#shows {
   background-color: #2F3E46;
   color: #363430;
   font-family: "Libre Franklin", sans-serif;
-  font-size: large;
   padding: 30px;
   position: relative;
   display: -webkit-box;
@@ -312,14 +316,18 @@ section#shows div.content-frame {
   border-radius: 5px;
 }
 
-section#shows ul {
+section#shows div.content-frame h2 {
+  font-size: 1.75em;
+}
+
+section#shows div.content-frame ul {
   padding: 20px;
 }
 
-section#shows ul li {
+section#shows div.content-frame ul li {
   font-family: "Libre Franklin", sans-serif;
-  padding: 10px;
-  font-size: large;
+  padding: 10px 0px;
+  font-size: 1.25em;
 }
 
 /*PICTURES*/
@@ -387,7 +395,7 @@ section#contacts ul li a {
 }
 
 section#contacts ul li a:hover {
-  color: #01d099;
+  color: #0d6659;
 }
 
 /*FOOTER*/
@@ -500,7 +508,7 @@ section#footer {
   body section#team div.content-frame div.person p {
     width: auto;
     padding: 10px 0;
-    font-size: medium;
+    font-size: 1.25em;
   }
   body section#team div.content-frame div.person div.pic {
     width: auto;
@@ -515,6 +523,9 @@ section#footer {
     margin: 0px;
     padding: 50px;
     border-radius: 0;
+  }
+  body section#mission div.content-frame p {
+    font-size: 1.25em;
   }
   body section#team {
     padding: 0;
@@ -545,18 +556,6 @@ section#footer {
   }
 }
 
-@media only screen and (max-width: 660px) {
-  body section#mission div.content-frame {
-    padding: 20px;
-  }
-  body section#team div.content-frame {
-    padding: 20px;
-  }
-  body section#shows div.content-frame {
-    padding: 20px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   body section#team div.content-frame div.person div.pic {
     width: auto;
@@ -568,6 +567,30 @@ section#footer {
   }
   body section#navbar div.nav-container div#nav-list div#nav-list-container a {
     padding: 0 1%;
+  }
+  body section#contacts div.content-frame {
+    padding: 0;
+  }
+  body section#contacts div.content-frame h2 {
+    padding: 10px 0;
+  }
+  body section#contacts div.content-frame ul li {
+    padding: 10px;
+  }
+  body section#contacts div.content-frame ul li a {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body section#mission div.content-frame {
+    padding: 20px;
+  }
+  body section#team div.content-frame {
+    padding: 20px;
+  }
+  body section#shows div.content-frame {
+    padding: 20px;
   }
 }
 
@@ -603,11 +626,14 @@ section#footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  body section#contacts div.content-frame ul li {
-    padding: 5px;
+  body section#team div.content-frame div.person p {
+    font-size: 16px;
   }
-  body section#contacts div.content-frame ul li a {
-    font-size: 32px;
+  body section#mission div.content-frame p {
+    font-size: 16px;
+  }
+  body section#shows div.content-frame ul li {
+    font-size: 16px;
   }
 }
 

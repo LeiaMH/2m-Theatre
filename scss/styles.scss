@@ -1,10 +1,8 @@
 $dark: #2F3E46;
 $dark-text:#363430;
-$mid:#2F3E46;
 $light:#eff1f3;
-$accent:#01d099;
-$heading-font: 'Libre Franklin', sans-serif;//'Prata', serif;
-$text-font: 'Libre Franklin', sans-serif;//'Raleway', sans-serif;
+$accent:#0d6659;
+$font: 'Libre Franklin', sans-serif;
 $base-font-size: 16px;
 
 //-----------------------------
@@ -33,7 +31,7 @@ section#navbar{
     width:100%;
     background-color: $dark;
     color: $light;
-    font-family: $heading-font;
+    font-family: $font;
     box-shadow: 0px 2px 4px #222;
     div.nav-container{
         display: flex;
@@ -98,9 +96,9 @@ section#navbar{
 /*HERO IMAGE*/
 section#picture1{
     background-image: url(./img/acting.jpg);
+    background-size: cover;
     filter: blur(2px);
     height: 100vh;
-    background-size: cover;
 }
 div#subtitle{
         z-index: 5;
@@ -115,14 +113,14 @@ div#subtitle{
             display: flex;
             flex-direction: column;
             h1{
-                font-family: 'Libre Franklin', sans-serif;
+                font-family: $font;
                 letter-spacing: .03em;
                 font-weight: 800;
                 font-size: 4em;
                 color: $light;
              }
              h2{
-               font-family: $heading-font;
+               font-family: $font;
                font-size: 1.75em;
                color: $light;
                padding: 15px;
@@ -135,7 +133,7 @@ div#subtitle{
 section#mission{
     background-image: $dark;
     color: $dark-text;
-    font-family: $heading-font;
+    font-family: $font;
     padding: 30px;
     position: relative;
     min-height: 100vh;
@@ -151,13 +149,14 @@ section#mission{
         border-radius: 5px;
         }
     h2{
-        font-family: $heading-font;
+        font-family: $font;
         padding-bottom: 10px;
+        font-size: 1.75em;
     }
 
     p{
         font-size: 1.25em;
-        font-family: $text-font;
+        font-family: $font;
     }
 }
 
@@ -172,7 +171,7 @@ section#picture2{
 section#team{
     background-color: $dark;
     color: $dark-text;
-    font-family: $heading-font;
+    font-family: $font;
     padding: 30px;
     position: relative;
     display: flex;
@@ -184,21 +183,24 @@ section#team{
         background-color: rgba(239, 241, 243, .85);
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
-        }  
+        } 
+        h2 {
+            font-size: 1.75em;
+        } 
         div.person{
             margin: 30px 0px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             p{
-                font-family: $text-font;
+                font-family: $font;
                 padding: 5px;
                 width: 500px;
                 line-height: 1.5;
-                font-size: large;
+                font-size: 1.25em;
                 span{
-                    color: rgb(13, 102, 89);
-                    font-size: x-large;
+                    color: $accent;
+                    font-size: 1.25em;
                     font-weight: 500;
                 }
             }
@@ -221,10 +223,9 @@ section#team{
 
 /*SHOWS*/
 section#shows{
-    background-color: $mid;
+    background-color: $dark;
     color: $dark-text;
-    font-family: $heading-font;
-    font-size: large;
+    font-family: $font;
     padding: 30px;
     position: relative;
     display: flex;
@@ -237,15 +238,18 @@ section#shows{
         background-color: rgba(239, 241, 243, .85);
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
-        }  
-    ul{
-        padding: 20px;
-        li{
-            font-family: $text-font;
-            padding: 10px;
-            font-size: large;
+        h2{
+            font-size: 1.75em;
         }
-    }
+        ul{
+            padding: 20px;
+            li{
+                font-family: $font;
+                padding: 10px 0px;
+                font-size: 1.25em;
+            }
+        }
+        }  
 }
 
 /*PICTURES*/
@@ -257,9 +261,9 @@ section#picture3{
 
 /*CONTACTS*/
 section#contacts{
-    background-color: $mid;
+    background-color: $dark;
     color: $light;
-    font-family: $heading-font;
+    font-family: $font;
     position: relative;
     display: flex;
     justify-content: center;
@@ -302,7 +306,7 @@ section#footer{
     z-index: 8;
     background-color: rgba(239, 241, 243, .85);
     color: $dark-text;
-    font-family: $text-font;
+    font-family: $font;
     font-weight: 500;
     padding: 20px;
     display: flex;
@@ -406,7 +410,7 @@ section#footer{
         p{
         width: auto;
         padding: 10px 0;
-        font-size: medium;
+        font-size: 1.25em;
         }
         div.pic{
             width: auto;
@@ -422,6 +426,9 @@ section#footer{
             margin: 0px;
             padding: 50px;
             border-radius: 0;
+            p{
+                font-size: 1.25em;
+            }
         } 
     }
     body section#team {
@@ -461,20 +468,7 @@ section#footer{
     }
 }
 
-@media only screen and (max-width: 660px) {
-    body section#mission div.content-frame{
-        padding: 20px;
-    }
-    body section#team div.content-frame{
-        padding: 20px;
-        
-    }
-    body section#shows div.content-frame{
-        padding: 20px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {   
     body section#team div.content-frame div.person div.pic{
         width: auto;
         height: 400px;
@@ -487,7 +481,31 @@ section#footer{
         div#nav-list div#nav-list-container a{
             padding: 0 1%;
         }
+    }
+    body section#contacts div.content-frame{
+        padding: 0;
+        h2{
+            padding: 10px 0;
+        }
+        ul li{
+            padding: 10px;
+            a{
+                font-size: $base-font-size * 1.75;
+            }
+        } 
+    }
+}
 
+@media only screen and (max-width: 480px) {
+    body section#mission div.content-frame{
+        padding: 20px;
+    }
+    body section#team div.content-frame{
+        padding: 20px;
+        
+    }
+    body section#shows div.content-frame{
+        padding: 20px;
     }
 }
 
@@ -514,12 +532,16 @@ section#footer{
             } 
         }
     }
-    body section#contacts div.content-frame ul li{
-        padding: 5px;
-        a{
-            font-size: $base-font-size * 2;
-        }
-    } 
+    
+    body section#team div.content-frame div.person p{
+        font-size: $base-font-size;
+    }
+    body section#mission div.content-frame p{
+        font-size: $base-font-size;
+    }
+    body section#shows div.content-frame ul li{
+        font-size: $base-font-size;
+    }
 }
 
 @media only screen and (max-width: 280px){
