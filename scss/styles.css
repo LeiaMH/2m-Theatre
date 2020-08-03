@@ -496,6 +496,10 @@ section#footer {
 }
 
 @media only screen and (max-width: 740px) {
+  body div#subtitle div#sub-wrapper h1, body div#subtitle div#sub-wrapper h2 {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
   body section#team div.content-frame div.person {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -591,10 +595,6 @@ section#footer {
   }
   body section#shows div.content-frame {
     padding: 20px;
-  }
-  body section#picture1 {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
   }
 }
 
