@@ -592,6 +592,10 @@ section#footer {
   body section#shows div.content-frame {
     padding: 20px;
   }
+  body section#picture1 {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
 }
 
 @media only screen and (max-width: 380px) {
