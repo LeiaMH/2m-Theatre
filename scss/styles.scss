@@ -16,9 +16,11 @@ $base-font-size: 16px;
 body{
     background-color: $dark;
 }
+html{
+    scroll-behavior: smooth;
+}
 html.sr .load-hidden {
     visibility: hidden;
-    scroll-behavior: smooth;
 }
 
 //-----------SECTIONS----------
@@ -127,6 +129,20 @@ div#subtitle{
              }
         }
     
+}
+
+/*UP BUTTON*/
+div a i.up{
+    color: $accent;
+    font-size: $base-font-size * 2.5;
+    position: fixed;
+    bottom: .25em;
+    right: .5em;
+    z-index: 20;
+    transition: color .6s;
+}
+div a i.up:hover{
+    color: $light;
 }
 
 /*MISSION*/
@@ -402,6 +418,16 @@ section#footer{
 }    
 
 @media only screen and (max-width: 740px) {
+    div a i.up{
+        bottom: .45em;
+        color: rgba(47, 62, 70, .5);
+        font-size: $base-font-size * 1.75;
+        transition: color .6s;
+    }
+    div a i.up:hover{
+        color: $dark;
+    }
+
     body div#subtitle div#sub-wrapper {
          h1, h2 {
             filter: blur(0px);
@@ -430,7 +456,7 @@ section#footer{
             padding: 50px;
             border-radius: 0;
             p{
-                font-size: 1.25em;
+              font-size: 1.25em;
             }
         } 
     }
@@ -500,6 +526,20 @@ section#footer{
 }
 
 @media only screen and (max-width: 480px) {
+    div a i.up{
+        bottom: .3em;
+        right: .5em;
+        color:$dark-text;
+        background-color: rgba(255, 255, 255, .25);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-size: $base-font-size * 1.5;
+    }
+
     body section#mission div.content-frame{
         padding: 20px;
     }

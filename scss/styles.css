@@ -10,9 +10,12 @@ body {
   background-color: #2F3E46;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html.sr .load-hidden {
   visibility: hidden;
-  scroll-behavior: smooth;
 }
 
 /*NAVBAR*/
@@ -168,6 +171,22 @@ div#subtitle div#sub-wrapper h2 {
   font-size: 1.75em;
   color: #eff1f3;
   padding: 15px;
+}
+
+/*UP BUTTON*/
+div a i.up {
+  color: #0d6659;
+  font-size: 40px;
+  position: fixed;
+  bottom: .25em;
+  right: .5em;
+  z-index: 20;
+  -webkit-transition: color .6s;
+  transition: color .6s;
+}
+
+div a i.up:hover {
+  color: #eff1f3;
 }
 
 /*MISSION*/
@@ -496,6 +515,16 @@ section#footer {
 }
 
 @media only screen and (max-width: 740px) {
+  div a i.up {
+    bottom: .45em;
+    color: rgba(47, 62, 70, 0.5);
+    font-size: 28px;
+    -webkit-transition: color .6s;
+    transition: color .6s;
+  }
+  div a i.up:hover {
+    color: #2F3E46;
+  }
   body div#subtitle div#sub-wrapper h1, body div#subtitle div#sub-wrapper h2 {
     -webkit-filter: blur(0px);
             filter: blur(0px);
@@ -587,6 +616,25 @@ section#footer {
 }
 
 @media only screen and (max-width: 480px) {
+  div a i.up {
+    bottom: .3em;
+    right: .5em;
+    color: #363430;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+  }
   body section#mission div.content-frame {
     padding: 20px;
   }
