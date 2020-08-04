@@ -136,8 +136,6 @@ section#picture1 {
 
 div#subtitle {
   z-index: 5;
-  -webkit-filter: blur(0.15px);
-          filter: blur(0.15px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,11 +523,7 @@ section#footer {
     transition: color .6s;
   }
   div a i.up:hover {
-    color: transparent;
-  }
-  body div#subtitle div#sub-wrapper h1, body div#subtitle div#sub-wrapper h2 {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    color: #363430;
   }
   body section#team div.content-frame div.person {
     -webkit-box-orient: vertical;
@@ -710,6 +704,13 @@ section#footer {
     width: auto;
     height: 250px;
     max-height: 250px;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  body div#subtitle div#sub-wrapper h1, body div#subtitle div#sub-wrapper h2 {
+    -webkit-filter: blur(0.5px);
+            filter: blur(0.5px);
   }
 }
 /*# sourceMappingURL=styles.css.map */
