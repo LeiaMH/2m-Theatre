@@ -8,7 +8,6 @@
 
 body {
   background-color: #2F3E46;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
 html {
@@ -26,7 +25,6 @@ section#navbar {
   top: 0;
   width: 100%;
   background-color: #2F3E46;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   color: #eff1f3;
   font-family: "Libre Franklin", sans-serif;
   -webkit-box-shadow: 0px 2px 4px #222;
@@ -175,10 +173,10 @@ div#subtitle div#sub-wrapper h2 {
 
 /*UP BUTTON*/
 div a i.up {
-  color: #0d6659;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 40px;
   position: fixed;
-  bottom: .25em;
+  bottom: .2em;
   right: .5em;
   z-index: 20;
   -webkit-transition: color .6s;
@@ -191,7 +189,7 @@ div a i.up:hover {
 
 /*MISSION*/
 section#mission {
-  background-image: transparent;
+  background-image: #2F3E46;
   color: #363430;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
@@ -236,7 +234,7 @@ section#picture2 {
 
 /*THE TEAM*/
 section#team {
-  background-color: transparent;
+  background-color: #2F3E46;
   color: #363430;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
@@ -311,7 +309,7 @@ section#team div.person div.pic img {
 
 /*SHOWS*/
 section#shows {
-  background-color: transparent;
+  background-color: #2F3E46;
   color: #363430;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
@@ -358,7 +356,7 @@ section#picture3 {
 
 /*CONTACTS*/
 section#contacts {
-  background-color: transparent;
+  background-color: #2F3E46;
   color: #eff1f3;
   font-family: "Libre Franklin", sans-serif;
   position: relative;
@@ -663,7 +661,7 @@ section#footer {
     font-size: 20px;
   }
   body section#navbar div.nav-container div#logo div a:hover {
-    background-color: transparent;
+    background-color: #2F3E46;
     color: #0d6659;
   }
   body section#navbar div.nav-container div#nav-list {
@@ -679,7 +677,7 @@ section#footer {
             justify-content: space-evenly;
   }
   body section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
-    background-color: transparent;
+    background-color: #2F3E46;
     color: #0d6659;
   }
   body section#team div.content-frame div.person p {
