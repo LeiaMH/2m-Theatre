@@ -379,18 +379,16 @@ section#footer{
     div#subtitle div#sub-wrapper{
         h1{
             font-size: 3em;
-    }
+        }
         h2{
             font-size: 1.5em;
+        }
     }
-    }
-
     section#mission div.content-frame p{
         font-size: medium;
     }
 
-    body section#team div.content-frame div.person{
-        
+    body section#team div.content-frame div.person{  
         p{
         font-size: medium;
         }        
@@ -521,20 +519,32 @@ section#footer{
             display: flex;
             flex-direction: column;
             height: 50px;
-            div#logo div a{
-                padding: 5px;
-                border-bottom: 1.5px solid $light;
-                font-weight: 700;
-                font-size: $base-font-size * 1.25;
+            div#logo div {
+                a{
+                    padding: 5px;
+                    border-bottom: 1.5px solid $light;
+                    font-weight: 700;
+                    font-size: $base-font-size * 1.25;
+                }
+                a:hover{
+                    background-color: $dark;
+                    color: $accent;
+                } 
             }
             div#nav-list{
                 width: 100%;
-                div#nav-list-container a{
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-evenly;
+                div#nav-list-container {
+                    a{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                    a:hover{
+                        background-color: $dark;
+                        color: $accent;
+                    }
                 }
-            } 
+            }
         }
     }
     

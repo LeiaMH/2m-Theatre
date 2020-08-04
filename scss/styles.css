@@ -618,6 +618,10 @@ section#footer {
     font-weight: 700;
     font-size: 20px;
   }
+  body section#navbar div.nav-container div#logo div a:hover {
+    background-color: #2F3E46;
+    color: #0d6659;
+  }
   body section#navbar div.nav-container div#nav-list {
     width: 100%;
   }
@@ -629,6 +633,10 @@ section#footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  body section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
+    background-color: #2F3E46;
+    color: #0d6659;
   }
   body section#team div.content-frame div.person p {
     font-size: 16px;
