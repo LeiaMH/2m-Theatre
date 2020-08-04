@@ -79,7 +79,7 @@ section#navbar div.nav-container div#logo div a {
 
 section#navbar div.nav-container div#logo div a:hover {
   font-weight: 700;
-  color: transparent;
+  color: #2F3E46;
   background-color: #eff1f3;
 }
 
@@ -121,7 +121,7 @@ section#navbar div.nav-container div#nav-list div#nav-list-container a {
 
 section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
   font-weight: 700;
-  color: transparent;
+  color: #2F3E46;
   background-color: #eff1f3;
 }
 
