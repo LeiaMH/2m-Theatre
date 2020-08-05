@@ -296,6 +296,14 @@ section#team div.person p span.italic {
   font-style: italic;
 }
 
+section#team div.person p:nth-child(odd) {
+  padding: 0 40px 0 0;
+}
+
+section#team div.person p:nth-child(even) {
+  padding: 0 0 0 40px;
+}
+
 section#team div.person div.pic {
   border: 2px solid #eff1f3;
   border-radius: 5px;

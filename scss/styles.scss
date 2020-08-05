@@ -223,7 +223,13 @@ section#team{
                 span.italic{
                     font-style: italic;
                 }
-            }
+            }    
+            p:nth-child(odd){
+                padding: 0 40px 0 0;
+                }
+            p:nth-child(even){
+                padding: 0 0 0 40px;
+            }    
             div.pic{
                 border: 2px solid $light;
                 border-radius: 5px;
