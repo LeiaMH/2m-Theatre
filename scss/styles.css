@@ -205,7 +205,7 @@ section#mission {
 }
 
 section#mission div.content-frame {
-  width: 75%;
+  width: 80%;
   margin: 100px;
   padding: 80px;
   background-color: rgba(239, 241, 243, 0.85);
@@ -248,7 +248,7 @@ section#team {
 }
 
 section#team div.content-frame {
-  width: 75%;
+  width: 80%;
   margin: 100px;
   padding: 80px;
   background-color: rgba(239, 241, 243, 0.85);
@@ -259,10 +259,14 @@ section#team div.content-frame {
 
 section#team h2 {
   font-size: 1.75em;
+  margin-bottom: 30px;
+}
+
+section#team div.person:not(:last-child) {
+  margin: 0px 0px 60px 0px;
 }
 
 section#team div.person {
-  margin: 30px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,25 +281,26 @@ section#team div.person {
 
 section#team div.person p {
   font-family: "Libre Franklin", sans-serif;
-  padding: 5px;
   width: 500px;
   line-height: 1.5;
   font-size: 1.25em;
 }
 
-section#team div.person p span {
+section#team div.person p span.name {
   color: #0d6659;
   font-size: 1.25em;
   font-weight: 500;
 }
 
+section#team div.person p span.italic {
+  font-style: italic;
+}
+
 section#team div.person div.pic {
   border: 2px solid #eff1f3;
   border-radius: 5px;
-  width: 250px;
-  min-width: 200px;
-  height: 300px;
-  min-height: 250px;
+  width: 400px;
+  height: 500px;
   -webkit-box-shadow: 4px 4px 8px #222;
           box-shadow: 4px 4px 8px #222;
 }
@@ -324,7 +329,7 @@ section#shows {
 }
 
 section#shows div.content-frame {
-  width: 75%;
+  width: 80%;
   margin: 100px 100px 0px 100px;
   padding: 80px;
   background-color: rgba(239, 241, 243, 0.85);
@@ -434,6 +439,19 @@ section#footer {
 }
 
 /*MEDIA-QUERIES*/
+@media only screen and (max-width: 1400px) {
+  body section#team div.content-frame div.person div.pic {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  body section#team div.content-frame div.person div.pic {
+    height: 400px;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   body section#mission div.content-frame {
     width: 80%;
@@ -455,17 +473,17 @@ section#footer {
 @media only screen and (max-width: 1200px) {
   body section#mission div.content-frame {
     width: 85%;
-    margin: 15px;
+    margin: 0px;
     padding: 60px;
   }
   body section#team div.content-frame {
     width: 85%;
-    margin: 15px;
+    margin: 0px;
     padding: 60px;
   }
   body section#shows div.content-frame {
     width: 85%;
-    margin: 15px;
+    margin: 0px;
     padding: 60px;
   }
 }
@@ -473,12 +491,10 @@ section#footer {
 @media only screen and (max-width: 1100px) {
   body section#mission div.content-frame {
     width: 90%;
-    margin: 10px;
     padding: 50px;
   }
   body section#team div.content-frame {
     width: 90%;
-    margin: 10px;
     padding: 50px;
   }
   body section#team div.content-frame div.person p {
@@ -486,8 +502,14 @@ section#footer {
   }
   body section#shows div.content-frame {
     width: 90%;
-    margin: 10px;
     padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body section#team div.content-frame div.person div.pic {
+    width: 250px;
+    height: 300px;
   }
 }
 
@@ -503,6 +525,13 @@ section#footer {
   }
   body section#team div.content-frame div.person p {
     font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  body section#team div.content-frame div.person div.pic {
+    min-width: 200px;
+    height: 250px;
   }
 }
 
