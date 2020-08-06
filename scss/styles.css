@@ -213,7 +213,8 @@ section#mission {
 }
 
 section#mission div.content-frame {
-  width: 90%;
+  width: 85%;
+  max-width: 1000px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -302,7 +303,8 @@ section#team {
 }
 
 section#team div.content-frame {
-  width: 90%;
+  width: 85%;
+  max-width: 1000px;
   margin: 100px;
   padding: 80px;
   background-color: #d7d7d7;
@@ -403,7 +405,8 @@ section#shows {
 }
 
 section#shows div.content-frame {
-  width: 90%;
+  width: 85%;
+  max-width: 1000px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

@@ -163,7 +163,8 @@ section#mission{
     align-items: center;
     line-height: 1.5;
     div.content-frame{
-        width: 90%;
+        width: 85%;
+        max-width: 1000px;
         height: fit-content;
         margin: 100px;
         padding: 80px;
@@ -235,7 +236,8 @@ section#team{
     display: flex;
     justify-content: center;
     div.content-frame{
-        width: 90%;
+        width: 85%;
+        max-width: 1000px;
         margin: 100px;
         padding: 80px;
         background-color: $light-background;
@@ -308,7 +310,8 @@ section#shows{
     justify-content: center;
     min-height: fit-content;
     div.content-frame{
-        width: 90%;
+        width: 85%;
+        max-width: 1000px;
         height: fit-content;
         margin: 100px 100px 0px 100px;
         padding: 80px;
