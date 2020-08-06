@@ -471,19 +471,37 @@ section#footer{
         color: $dark-text;
     }
 
-    body section#team div.content-frame div.person{
-        flex-direction: column;
-        align-items: center;
-        p{
-        width: auto;
-        font-size: 1.25em;
-        }
-        div.pic{
+    body section#team div.content-frame{
+        div.person{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            p{
             width: auto;
-            height: 500px;
-            max-height: 500px;
-        }  
-    }
+            font-size: 1.25em;
+            }
+            p:nth-child(odd){
+                padding: 0 0 20px 0;
+                }
+            p:nth-child(even){
+                padding: 20px 0 0 0;
+            }  
+            div.pic{
+                width: auto;
+                height: 500px;
+                max-height: 500px;
+            }  
+        }
+        div.person:not(:last-child):after{
+            content: '...';
+            color: transparent;
+            background-color: rgba(172, 167, 167, 0.75);
+            width: 150px;
+            height: 2px;
+            margin: 2px;
+            margin: 40px;
+        }
+    } 
 
     body section#mission{
         padding: 0;
