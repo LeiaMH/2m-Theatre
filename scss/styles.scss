@@ -242,7 +242,7 @@ section#team{
                 padding: 0 0 0 40px;
             }    
             div.pic{
-                border: 2px solid $light;
+                border: 1px solid transparent;
                 border-radius: 5px;
                 width: 400px;
                 height: 500px;
@@ -251,6 +251,7 @@ section#team{
                     object-fit: cover;  
                     width: 100%;
                     height: 100%;
+                    border-radius: 5px;
                 }
             }
         }
@@ -412,9 +413,6 @@ section#footer{
     body section#team div.content-frame{
         width: 90%;
         padding: 50px;
-        div.person p{
-            padding: 0 20px;
-        }
     }
     body section#shows div.content-frame{
         width: 90%;
@@ -478,7 +476,6 @@ section#footer{
         align-items: center;
         p{
         width: auto;
-        padding: 10px 0;
         font-size: 1.25em;
         }
         div.pic{
@@ -507,9 +504,6 @@ section#footer{
             margin: 0px;
             padding: 50px;
             border-radius: 0;
-            div.person p{
-                padding: 20 0px;
-            }
         }
     }
 
