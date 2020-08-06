@@ -1,8 +1,8 @@
-$dark:#363636;                            //363636; //#31572C; //#2F3E46;
-$dark-text:#fff;                   //#0D1821;//#363430;
+$dark:#507255;                            //363636; //#31572C; //#2F3E46;
+$dark-text:#282828;                   //#0D1821;//#363430;
 $light:#d7d7d7;                    //#eff1f3;
-$light-background:#507255;        //3b5249;//507255;//3b444b;      #EDEEC0;   rgba(239, 241, 243, .85);
-$accent:#f9d579;                   //#D57A66;           //#0d6659;
+$light-background:#d7d7d7;        //3b5249;//507255;//3b444b;      #EDEEC0;   rgba(239, 241, 243, .85);
+$accent:#1e2d2f;                   //#D57A66;           //#0d6659;
 $font: 'Libre Franklin', sans-serif;
 $base-font-size: 16px;
 
@@ -17,6 +17,7 @@ $base-font-size: 16px;
 body{
     background-color: $dark;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -35,7 +36,7 @@ section#navbar{
     background-color: #282828;
     color: $light;
     font-family: $font;
-    box-shadow: 0px 2px 4px #222;
+    box-shadow: 0px 2px 10px #222;
     div.nav-container{
         display: flex;
         justify-content: space-between;
@@ -57,14 +58,13 @@ section#navbar{
                     font-size: $base-font-size * 1.5;
                     text-decoration: none;
                     color: $light;
-                    background-color: $light-background;
+                    background-color: #3b444b;
                     font-weight: 700;
                     transition: font-weight .6s, color .6s, background-color .6s;
                 }
                 a:hover{
-                    //font-weight: 700;
-                    color: $dark;
-                    background-color: $accent;
+                    color: $dark-text;
+                    background-color: #507255;
                 }
             }
         }
@@ -89,8 +89,8 @@ section#navbar{
                     }
                     a:hover{
                         font-weight: 700;
-                        color: $dark;
-                        background-color: $accent;
+                        color: #282828;
+                        background-color: #6a8d73;
                     }
             
             }
@@ -99,10 +99,11 @@ section#navbar{
 }
 
 /*HERO IMAGE*/
-section#picture1{
-    background-image: url(./img/acting.jpg);
+section#pictureMain{
+    background-image: url(./img/Main.JPG);
     background-size: cover;
-    filter: blur(2px);
+    filter: grayscale(20%);
+    filter: blur(1px);
     height: 100vh;
 }
 div#subtitle{
@@ -121,12 +122,14 @@ div#subtitle{
                 letter-spacing: .03em;
                 font-weight: 800;
                 font-size: 4em;
-                color: $light;
+                color: #eff1f3;
+                text-shadow: 0px 0px 10px #000;
              }
              h2{
                font-family: $font;
                font-size: 1.75em;
-               color: $light;
+               color:#eff1f3;
+               text-shadow: 0px 0px 10px #000;
                padding: 15px;
              }
         }
@@ -149,17 +152,18 @@ div a i.up:hover{
 
 /*MISSION*/
 section#mission{
-    background-image: $dark;
+    background-color: $dark;
     color: $dark-text;
     font-family: $font;
     padding: 30px;
     position: relative;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     line-height: 1.5;
     div.content-frame{
-        width: 80%;
+        width: 90%;
         height: fit-content;
         margin: 100px;
         padding: 80px;
@@ -168,13 +172,11 @@ section#mission{
         border-radius: 5px;
         h2{
             font-family: $font;
-            color: $accent;
             padding-bottom: 10px;
             font-size: 1.75em;
         }
         h3{
-            padding: 10px 0 0 0;
-            //color: $accent;
+            padding: 0 0 0 0;
             font-family: $font;
             font-weight: 600;
             font-size: 1.25em;
@@ -202,10 +204,25 @@ section#mission{
 }
 
 /*PICTURES*/
-section#picture2{
-    background-image: url(./img/park.jpg);
+section#picture1{
+    background-image: url(./img/1.JPG);
     height: 100vh;
     background-size: cover;
+    filter:  grayscale(20%);
+}
+
+section#picture2{
+    background-image: url(./img/2.jpeg);
+    height: 100vh;
+    background-size: cover;
+    filter:  grayscale(20%);
+}
+
+section#picture3{
+    background-image: url(./img/3.JPG);
+    height: 100vh;
+    background-size: cover;
+    filter:  grayscale(20%);
 }
 
 /*THE TEAM*/
@@ -218,7 +235,7 @@ section#team{
     display: flex;
     justify-content: center;
     div.content-frame{
-        width: 80%;
+        width: 90%;
         margin: 100px;
         padding: 80px;
         background-color: $light-background;
@@ -226,7 +243,6 @@ section#team{
         border-radius: 5px;
         } 
         h2 {
-            color: $accent;
             font-size: 1.75em;
             margin-bottom: 30px;
         }
@@ -245,7 +261,6 @@ section#team{
                 line-height: 1.5;
                 font-size: 1.25em;
                 span.name{
-                    color: $accent;
                     font-size: 1.25em;
                     font-weight: 500;
                 }
@@ -264,7 +279,7 @@ section#team{
                 border-radius: 5px;
                 width: 400px;
                 height: 500px;
-                box-shadow: 0px 0px 20px 4px #222;
+                box-shadow: 0px 0px 20px 2px #444;
                 img{
                     object-fit: cover;  
                     width: 100%;
@@ -274,6 +289,13 @@ section#team{
             }
         }
 }
+
+section#picture4{
+    background-image: url(./img/4.JPG);
+    height: 100vh;
+    background-size: cover;
+    filter:  grayscale(20%);
+} 
 
 /*SHOWS*/
 section#shows{
@@ -286,7 +308,7 @@ section#shows{
     justify-content: center;
     min-height: fit-content;
     div.content-frame{
-        width: 80%;
+        width: 90%;
         height: fit-content;
         margin: 100px 100px 0px 100px;
         padding: 80px;
@@ -294,7 +316,6 @@ section#shows{
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
         h2{
-            color: $accent;
             font-size: 1.75em;
         }
         ul{
@@ -306,13 +327,6 @@ section#shows{
             }
         }
         }  
-}
-
-/*PICTURES*/
-section#picture3{
-    background-image: url(./img/actors.jpg);
-    height: 100vh;
-    background-size: cover;
 }
 
 /*CONTACTS*/
@@ -350,7 +364,7 @@ section#contacts{
             transition: color .6s;  
             }
             a:hover{
-            color: $accent;  
+            color: $dark-text;  
             }
         }
         
@@ -360,8 +374,8 @@ section#contacts{
 /*FOOTER*/
 section#footer{
     z-index: 8;
-    background-color:$light-background;
-    color: $dark-text;
+    background-color:#282828;
+    color: $light;
     font-family: $font;
     font-weight: 500;
     padding: 20px;

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #363636;
+  background-color: #507255;
 }
 
 html {
@@ -27,8 +27,8 @@ section#navbar {
   background-color: #282828;
   color: #d7d7d7;
   font-family: "Libre Franklin", sans-serif;
-  -webkit-box-shadow: 0px 2px 4px #222;
-          box-shadow: 0px 2px 4px #222;
+  -webkit-box-shadow: 0px 2px 10px #222;
+          box-shadow: 0px 2px 10px #222;
 }
 
 section#navbar div.nav-container {
@@ -71,15 +71,15 @@ section#navbar div.nav-container div#logo div a {
   font-size: 24px;
   text-decoration: none;
   color: #d7d7d7;
-  background-color: #507255;
+  background-color: #3b444b;
   font-weight: 700;
   -webkit-transition: font-weight .6s, color .6s, background-color .6s;
   transition: font-weight .6s, color .6s, background-color .6s;
 }
 
 section#navbar div.nav-container div#logo div a:hover {
-  color: #363636;
-  background-color: #f9d579;
+  color: #282828;
+  background-color: #507255;
 }
 
 section#navbar div.nav-container div#nav-list {
@@ -120,16 +120,18 @@ section#navbar div.nav-container div#nav-list div#nav-list-container a {
 
 section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
   font-weight: 700;
-  color: #363636;
-  background-color: #f9d579;
+  color: #282828;
+  background-color: #6a8d73;
 }
 
 /*HERO IMAGE*/
-section#picture1 {
-  background-image: url(./img/acting.jpg);
+section#pictureMain {
+  background-image: url(./img/Main.JPG);
   background-size: cover;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
   height: 100vh;
 }
 
@@ -162,13 +164,15 @@ div#subtitle div#sub-wrapper h1 {
   letter-spacing: .03em;
   font-weight: 800;
   font-size: 4em;
-  color: #d7d7d7;
+  color: #eff1f3;
+  text-shadow: 0px 0px 10px #000;
 }
 
 div#subtitle div#sub-wrapper h2 {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.75em;
-  color: #d7d7d7;
+  color: #eff1f3;
+  text-shadow: 0px 0px 10px #000;
   padding: 15px;
 }
 
@@ -190,31 +194,32 @@ div a i.up:hover {
 
 /*MISSION*/
 section#mission {
-  background-image: #363636;
-  color: #fff;
+  background-color: #507255;
+  color: #282828;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
   position: relative;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 1.5;
 }
 
 section#mission div.content-frame {
-  width: 80%;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 100px;
   padding: 80px;
-  background-color: #507255;
+  background-color: #d7d7d7;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
           box-shadow: 0px 0px 30px 3px #000;
   border-radius: 5px;
@@ -222,13 +227,12 @@ section#mission div.content-frame {
 
 section#mission div.content-frame h2 {
   font-family: "Libre Franklin", sans-serif;
-  color: #f9d579;
   padding-bottom: 10px;
   font-size: 1.75em;
 }
 
 section#mission div.content-frame h3 {
-  padding: 10px 0 0 0;
+  padding: 0 0 0 0;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 600;
   font-size: 1.25em;
@@ -258,16 +262,34 @@ section#mission div.content-frame p.quote:nth-child(odd) {
 }
 
 /*PICTURES*/
-section#picture2 {
-  background-image: url(./img/park.jpg);
+section#picture1 {
+  background-image: url(./img/1.JPG);
   height: 100vh;
   background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+}
+
+section#picture2 {
+  background-image: url(./img/2.jpeg);
+  height: 100vh;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+}
+
+section#picture3 {
+  background-image: url(./img/3.JPG);
+  height: 100vh;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
 }
 
 /*THE TEAM*/
 section#team {
-  background-color: #363636;
-  color: #fff;
+  background-color: #507255;
+  color: #282828;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
   position: relative;
@@ -280,17 +302,16 @@ section#team {
 }
 
 section#team div.content-frame {
-  width: 80%;
+  width: 90%;
   margin: 100px;
   padding: 80px;
-  background-color: #507255;
+  background-color: #d7d7d7;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
           box-shadow: 0px 0px 30px 3px #000;
   border-radius: 5px;
 }
 
 section#team h2 {
-  color: #f9d579;
   font-size: 1.75em;
   margin-bottom: 30px;
 }
@@ -322,7 +343,6 @@ section#team div.person p {
 }
 
 section#team div.person p span.name {
-  color: #f9d579;
   font-size: 1.25em;
   font-weight: 500;
 }
@@ -344,8 +364,8 @@ section#team div.person div.pic {
   border-radius: 5px;
   width: 400px;
   height: 500px;
-  -webkit-box-shadow: 0px 0px 20px 4px #222;
-          box-shadow: 0px 0px 20px 4px #222;
+  -webkit-box-shadow: 0px 0px 20px 2px #444;
+          box-shadow: 0px 0px 20px 2px #444;
 }
 
 section#team div.person div.pic img {
@@ -356,10 +376,18 @@ section#team div.person div.pic img {
   border-radius: 5px;
 }
 
+section#picture4 {
+  background-image: url(./img/4.JPG);
+  height: 100vh;
+  background-size: cover;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+}
+
 /*SHOWS*/
 section#shows {
-  background-color: #363636;
-  color: #fff;
+  background-color: #507255;
+  color: #282828;
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
   position: relative;
@@ -375,20 +403,19 @@ section#shows {
 }
 
 section#shows div.content-frame {
-  width: 80%;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 100px 100px 0px 100px;
   padding: 80px;
-  background-color: #507255;
+  background-color: #d7d7d7;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
           box-shadow: 0px 0px 30px 3px #000;
   border-radius: 5px;
 }
 
 section#shows div.content-frame h2 {
-  color: #f9d579;
   font-size: 1.75em;
 }
 
@@ -402,16 +429,9 @@ section#shows div.content-frame ul li {
   font-size: 1.25em;
 }
 
-/*PICTURES*/
-section#picture3 {
-  background-image: url(./img/actors.jpg);
-  height: 100vh;
-  background-size: cover;
-}
-
 /*CONTACTS*/
 section#contacts {
-  background-color: #363636;
+  background-color: #507255;
   color: #d7d7d7;
   font-family: "Libre Franklin", sans-serif;
   position: relative;
@@ -467,14 +487,14 @@ section#contacts ul li a {
 }
 
 section#contacts ul li a:hover {
-  color: #f9d579;
+  color: #282828;
 }
 
 /*FOOTER*/
 section#footer {
   z-index: 8;
-  background-color: #507255;
-  color: #fff;
+  background-color: #282828;
+  color: #d7d7d7;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 500;
   padding: 20px;
@@ -597,7 +617,7 @@ section#footer {
     transition: color .6s;
   }
   div a i.up:hover {
-    color: #fff;
+    color: #282828;
   }
   body section#team div.content-frame div.person {
     -webkit-box-orient: vertical;
@@ -701,7 +721,7 @@ section#footer {
   div a i.up {
     bottom: .3em;
     right: .5em;
-    color: #fff;
+    color: #282828;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 100%;
     display: -webkit-box;
@@ -749,8 +769,8 @@ section#footer {
     font-size: 20px;
   }
   body section#navbar div.nav-container div#logo div a:hover {
-    background-color: #363636;
-    color: #f9d579;
+    background-color: #507255;
+    color: #1e2d2f;
   }
   body section#navbar div.nav-container div#nav-list {
     width: 100%;
@@ -765,8 +785,8 @@ section#footer {
             justify-content: space-evenly;
   }
   body section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
-    background-color: #363636;
-    color: #f9d579;
+    background-color: #507255;
+    color: #1e2d2f;
   }
   body section#team div.content-frame div.person p {
     font-size: 16px;
