@@ -214,15 +214,26 @@ section#mission div.content-frame {
   border-radius: 5px;
 }
 
-section#mission h2 {
+section#mission div.content-frame h2 {
   font-family: "Libre Franklin", sans-serif;
   padding-bottom: 10px;
   font-size: 1.75em;
 }
 
-section#mission p {
-  font-size: 1.25em;
+section#mission div.content-frame h3 {
+  padding: 10px 0 0 0;
+  color: #0d6659;
   font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+section#mission div.content-frame p {
+  padding: 10px 0px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.25em;
+  text-align: justify;
 }
 
 /*PICTURES*/
@@ -280,6 +291,7 @@ section#team div.person {
 }
 
 section#team div.person p {
+  text-align: justify;
   font-family: "Libre Franklin", sans-serif;
   width: 500px;
   line-height: 1.5;

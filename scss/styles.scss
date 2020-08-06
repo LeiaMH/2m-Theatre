@@ -1,6 +1,7 @@
 $dark: #2F3E46;
 $dark-text:#363430;
 $light:#eff1f3;
+$light-background:rgba(239, 241, 243, .85);
 $accent:#0d6659;
 $font: 'Libre Franklin', sans-serif;
 $base-font-size: 16px;
@@ -159,20 +160,29 @@ section#mission{
         width: 80%;
         margin: 100px;
         padding: 80px;
-        background-color: rgba(239, 241, 243, .85);
+        background-color: $light-background;
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
+        h2{
+            font-family: $font;
+            padding-bottom: 10px;
+            font-size: 1.75em;
         }
-    h2{
-        font-family: $font;
-        padding-bottom: 10px;
-        font-size: 1.75em;
-    }
-
-    p{
-        font-size: 1.25em;
-        font-family: $font;
-    }
+        h3{
+            padding: 10px 0 0 0;
+            color: $accent;
+            font-family: $font;
+            font-weight: 600;
+            font-size: 1.25em;
+            text-align: justify;
+        }
+        p{
+            padding: 10px 0px;
+            font-family: $font;
+            font-size: 1.25em;
+            text-align: justify;
+        }
+        }
 }
 
 /*PICTURES*/
@@ -195,7 +205,7 @@ section#team{
         width: 80%;
         margin: 100px;
         padding: 80px;
-        background-color: rgba(239, 241, 243, .85);
+        background-color: $light-background;
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
         } 
@@ -211,6 +221,7 @@ section#team{
             flex-direction: row;
             justify-content: space-between;
             p{
+                text-align: justify;
                 font-family: $font;
                 width: 500px;
                 line-height: 1.5;
@@ -259,7 +270,7 @@ section#shows{
         width: 80%;
         margin: 100px 100px 0px 100px;
         padding: 80px;
-        background-color: rgba(239, 241, 243, .85);
+        background-color: $light-background;
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
         h2{
@@ -328,7 +339,7 @@ section#contacts{
 /*FOOTER*/
 section#footer{
     z-index: 8;
-    background-color: rgba(239, 241, 243, .85);
+    background-color:$light-background;
     color: $dark-text;
     font-family: $font;
     font-weight: 500;
@@ -339,7 +350,7 @@ section#footer{
     width: 100%;
 }
 
-//------------
+//----------------------------------------------------------------
 
 /*MEDIA-QUERIES*/
 
