@@ -128,10 +128,8 @@ section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
 section#pictureMain {
   background-image: url(./img/Main.JPG);
   background-size: cover;
-  -webkit-filter: grayscale(20%);
-          filter: grayscale(20%);
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  -webkit-filter: grayscale(20%) blur(0.5px);
+          filter: grayscale(20%) blur(0.5px);
   height: 100vh;
 }
 
@@ -199,7 +197,7 @@ section#mission {
   font-family: "Libre Franklin", sans-serif;
   padding: 30px;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,13 +765,10 @@ section#footer {
   }
   body section#navbar div.nav-container div#logo div a {
     padding: 5px;
-    border-bottom: 1.5px solid #d7d7d7;
     font-weight: 700;
     font-size: 20px;
-  }
-  body section#navbar div.nav-container div#logo div a:hover {
-    background-color: #507255;
-    color: #1e2d2f;
+    background-color: #3b444b;
+    width: 100vw;
   }
   body section#navbar div.nav-container div#nav-list {
     width: 100%;
@@ -786,10 +781,6 @@ section#footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-  body section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
-    background-color: #507255;
-    color: #1e2d2f;
   }
   body section#team div.content-frame div.person p {
     font-size: 16px;

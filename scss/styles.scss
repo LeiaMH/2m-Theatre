@@ -2,7 +2,7 @@ $dark:#507255;                            //363636; //#31572C; //#2F3E46;
 $dark-text:#282828;                   //#0D1821;//#363430;
 $light:#d7d7d7;                    //#eff1f3;
 $light-background:#d7d7d7;        //3b5249;//507255;//3b444b;      #EDEEC0;   rgba(239, 241, 243, .85);
-$accent:#1e2d2f;                   //#D57A66;           //#0d6659;
+$accent:#3b444b;                   //#D57A66;           //#0d6659;
 $font: 'Libre Franklin', sans-serif;
 $base-font-size: 16px;
 
@@ -102,8 +102,7 @@ section#navbar{
 section#pictureMain{
     background-image: url(./img/Main.JPG);
     background-size: cover;
-    filter: grayscale(20%);
-    filter: blur(1px);
+    filter: grayscale(20%) blur(.5px);
     height: 100vh;
 }
 div#subtitle{
@@ -157,7 +156,7 @@ section#mission{
     font-family: $font;
     padding: 30px;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +295,7 @@ section#picture4{
     background-image: url(./img/4.JPG);
     height: 100vh;
     background-size: cover;
-    filter:  grayscale(20%);
+    filter: grayscale(20%);
 } 
 
 /*SHOWS*/
@@ -651,13 +650,10 @@ section#footer{
             div#logo div {
                 a{
                     padding: 5px;
-                    border-bottom: 1.5px solid $light;
                     font-weight: 700;
                     font-size: $base-font-size * 1.25;
-                }
-                a:hover{
-                    background-color: $dark;
-                    color: $accent;
+                    background-color: #3b444b;
+                    width: 100vw;
                 } 
             }
             div#nav-list{
@@ -667,10 +663,6 @@ section#footer{
                         width: 100%;
                         display: flex;
                         justify-content: space-evenly;
-                    }
-                    a:hover{
-                        background-color: $dark;
-                        color: $accent;
                     }
                 }
             }
