@@ -192,6 +192,8 @@ section#mission{
         p.quote{
             font-style: italic;
             text-align: left;
+            font-weight: 400;
+            color: #444;
             span{
                 font-style: normal;
                 font-weight: 600;  
@@ -199,6 +201,7 @@ section#mission{
         }
         p.quote:nth-child(odd){
             text-align: right;
+            color: #111;
         }
         }
 }

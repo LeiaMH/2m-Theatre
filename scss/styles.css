@@ -249,6 +249,8 @@ section#mission div.content-frame p {
 section#mission div.content-frame p.quote {
   font-style: italic;
   text-align: left;
+  font-weight: 400;
+  color: #444;
 }
 
 section#mission div.content-frame p.quote span {
@@ -258,6 +260,7 @@ section#mission div.content-frame p.quote span {
 
 section#mission div.content-frame p.quote:nth-child(odd) {
   text-align: right;
+  color: #111;
 }
 
 /*PICTURES*/
