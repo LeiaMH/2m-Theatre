@@ -272,7 +272,6 @@ section#picture1 {
   background-size: cover;
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
-  background-attachment: fixed;
 }
 
 section#picture2 {
@@ -281,7 +280,6 @@ section#picture2 {
   background-size: cover;
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
-  background-attachment: fixed;
 }
 
 section#picture3 {
@@ -290,7 +288,6 @@ section#picture3 {
   background-size: cover;
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
-  background-attachment: fixed;
 }
 
 /*THE TEAM*/
@@ -390,7 +387,6 @@ section#picture4 {
   background-size: cover;
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
-  background-attachment: fixed;
 }
 
 /*SHOWS*/
