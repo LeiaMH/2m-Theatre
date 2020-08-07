@@ -510,74 +510,28 @@ section#footer {
 }
 
 /*MEDIA-QUERIES*/
-@media only screen and (max-width: 1400px) {
-  body section#team div.content-frame div.person div.pic {
-    width: 350px;
-    height: 450px;
-  }
-}
-
-@media only screen and (max-width: 1350px) {
-  body section#team div.content-frame div.person div.pic {
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  body section#mission div.content-frame {
-    width: 80%;
-    margin: 20px;
-    padding: 70px;
-  }
-  body section#team div.content-frame {
-    width: 80%;
-    margin: 20px;
-    padding: 70px;
-  }
-  body section#shows div.content-frame {
-    width: 80%;
-    margin: 20px;
-    padding: 70px;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   body section#mission div.content-frame {
-    width: 85%;
+    width: 90%;
     margin: 0px;
     padding: 60px;
   }
   body section#team div.content-frame {
-    width: 85%;
+    width: 90%;
     margin: 0px;
     padding: 60px;
   }
   body section#shows div.content-frame {
-    width: 85%;
+    width: 90%;
     margin: 0px;
     padding: 60px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  body section#mission div.content-frame {
-    width: 90%;
-    padding: 50px;
-  }
-  body section#team div.content-frame {
-    width: 90%;
-    padding: 50px;
-  }
-  body section#shows div.content-frame {
-    width: 90%;
-    padding: 50px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   body section#team div.content-frame div.person div.pic {
     width: 250px;
-    height: 300px;
+    height: 350px;
   }
 }
 
@@ -589,17 +543,10 @@ section#footer {
     font-size: 1.5em;
   }
   section#mission div.content-frame p {
-    font-size: medium;
+    font-size: 16px;
   }
   body section#team div.content-frame div.person p {
-    font-size: medium;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  body section#team div.content-frame div.person div.pic {
-    min-width: 200px;
-    height: 250px;
+    font-size: 16px;
   }
 }
 
@@ -607,19 +554,51 @@ section#footer {
   body section#navbar div.nav-container div#nav-list {
     width: 75%;
   }
-}
-
-@media only screen and (max-width: 740px) {
+  body section#mission {
+    padding: 0;
+  }
+  body section#mission div.content-frame {
+    width: 100%;
+    border-radius: 0;
+  }
+  body section#team {
+    padding: 0;
+  }
+  body section#team div.content-frame {
+    width: 100%;
+    border-radius: 0;
+  }
+  body section#shows {
+    padding: 0;
+  }
+  body section#shows div.content-frame {
+    width: 100%;
+    border-radius: 0;
+  }
   div a i.up {
     bottom: .45em;
-    color: rgba(47, 62, 70, 0.5);
+    color: rgba(40, 40, 40, 0.75);
     font-size: 28px;
-    -webkit-transition: color .6s;
-    transition: color .6s;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    height: 30px;
   }
   div a i.up:hover {
-    color: #282828;
+    color: rgba(40, 40, 40, 0.75);
   }
+}
+
+@media only screen and (max-width: 650px) {
   body section#team div.content-frame div.person {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -654,35 +633,17 @@ section#footer {
     margin: 2px;
     margin: 40px;
   }
-  body section#mission {
-    padding: 0;
-  }
   body section#mission div.content-frame {
-    width: 100%;
-    margin: 0px;
     padding: 50px;
-    border-radius: 0;
   }
   body section#mission div.content-frame p {
     font-size: 1.25em;
   }
-  body section#team {
-    padding: 0;
-  }
   body section#team div.content-frame {
-    width: 100%;
-    margin: 0px;
     padding: 50px;
-    border-radius: 0;
-  }
-  body section#shows {
-    padding: 0;
   }
   body section#shows div.content-frame {
-    width: 100%;
-    margin: 0px;
     padding: 50px;
-    border-radius: 0;
   }
   body section#navbar div.nav-container div#logo a {
     font-size: 16px;
@@ -692,17 +653,15 @@ section#footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  body section#team div.content-frame div.person div.pic {
-    width: auto;
-    height: 400px;
-    max-height: 400px;
+@media only screen and (max-width: 480px) {
+  body section#mission div.content-frame {
+    padding: 25px;
   }
-  body section#navbar div.nav-container div#logo div a {
-    padding: 0 1%;
+  body section#team div.content-frame {
+    padding: 25px;
   }
-  body section#navbar div.nav-container div#nav-list div#nav-list-container a {
-    padding: 0 1%;
+  body section#shows div.content-frame {
+    padding: 25px;
   }
   body section#contacts div.content-frame {
     padding: 0;
@@ -716,40 +675,6 @@ section#footer {
   body section#contacts div.content-frame ul li a {
     font-size: 28px;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  div a i.up {
-    bottom: .3em;
-    right: .5em;
-    color: #282828;
-    background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 30px;
-    height: 30px;
-    font-size: 24px;
-  }
-  body section#mission div.content-frame {
-    padding: 20px;
-  }
-  body section#team div.content-frame {
-    padding: 20px;
-  }
-  body section#shows div.content-frame {
-    padding: 20px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
   body section#navbar {
     height: 100px;
   }
@@ -764,11 +689,13 @@ section#footer {
     height: 50px;
   }
   body section#navbar div.nav-container div#logo div a {
-    padding: 5px;
     font-weight: 700;
     font-size: 20px;
-    background-color: #3b444b;
     width: 100vw;
+  }
+  body section#navbar div.nav-container div#logo div a:hover {
+    color: #d7d7d7;
+    background-color: #3b444b;
   }
   body section#navbar div.nav-container div#nav-list {
     width: 100%;
@@ -782,7 +709,21 @@ section#footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  body section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
+    color: #d7d7d7;
+    background-color: #282828;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  body section#team div.content-frame div.person div.pic {
+    max-height: 400px;
+  }
   body section#team div.content-frame div.person p {
+    font-size: 16px;
+  }
+  body section#mission div.content-frame h3 {
     font-size: 16px;
   }
   body section#mission div.content-frame p {
@@ -793,17 +734,25 @@ section#footer {
   }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 320px) {
   div#subtitle div#sub-wrapper h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   div#subtitle div#sub-wrapper h2 {
     font-size: 1em;
   }
   body section#team div.content-frame div.person div.pic {
-    width: auto;
-    height: 250px;
-    max-height: 250px;
+    max-height: 350px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  body section#team div.content-frame div.person div.pic {
+    max-height: 300px;
+  }
+  body section#navbar div#nav-list div#nav-list-container a {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 
