@@ -143,7 +143,7 @@ div#subtitle {
           justify-content: center;
   text-align: center;
   position: relative;
-  bottom: 55vh;
+  bottom: 82vh;
   height: 0px;
 }
 
@@ -161,7 +161,7 @@ div#subtitle div#sub-wrapper h1 {
   font-family: "Libre Franklin", sans-serif;
   letter-spacing: .03em;
   font-weight: 800;
-  font-size: 4em;
+  font-size: 5em;
   color: #eff1f3;
   text-shadow: 0px 0px 10px #000;
 }
@@ -220,7 +220,7 @@ section#mission div.content-frame {
   height: fit-content;
   margin: 100px;
   padding: 80px;
-  background-color: #d7d7d7;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
           box-shadow: 0px 0px 30px 3px #000;
   border-radius: 5px;
@@ -230,6 +230,7 @@ section#mission div.content-frame h2 {
   font-family: "Libre Franklin", sans-serif;
   padding-bottom: 10px;
   font-size: 1.75em;
+  color: #119DA4;
 }
 
 section#mission div.content-frame h3 {
@@ -238,6 +239,7 @@ section#mission div.content-frame h3 {
   font-weight: 600;
   font-size: 1.25em;
   text-align: justify;
+  color: #3b444b;
 }
 
 section#mission div.content-frame p {
@@ -248,21 +250,21 @@ section#mission div.content-frame p {
   text-align: justify;
 }
 
-section#mission div.content-frame p.quote {
+section#mission div.content-frame ul li.quote {
   font-style: italic;
   text-align: left;
   font-weight: 400;
-  color: #444;
+  color: #282828;
+  padding: 10px;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
 }
 
-section#mission div.content-frame p.quote span {
+section#mission div.content-frame ul li.quote span {
   font-style: normal;
   font-weight: 600;
-}
-
-section#mission div.content-frame p.quote:nth-child(odd) {
-  text-align: right;
-  color: #111;
 }
 
 /*PICTURES*/
@@ -310,7 +312,7 @@ section#team div.content-frame {
   max-width: 1000px;
   margin: 100px;
   padding: 80px;
-  background-color: #d7d7d7;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
           box-shadow: 0px 0px 30px 3px #000;
   border-radius: 5px;
@@ -319,6 +321,7 @@ section#team div.content-frame {
 section#team h2 {
   font-size: 1.75em;
   margin-bottom: 30px;
+  color: #119DA4;
 }
 
 section#team div.person:not(:last-child) {
@@ -350,6 +353,7 @@ section#team div.person p {
 section#team div.person p span.name {
   font-size: 1.25em;
   font-weight: 500;
+  color: #3b444b;
 }
 
 section#team div.person p span.italic {
@@ -415,7 +419,7 @@ section#shows div.content-frame {
   height: fit-content;
   margin: 100px 100px 0px 100px;
   padding: 80px;
-  background-color: #d7d7d7;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
           box-shadow: 0px 0px 30px 3px #000;
   border-radius: 5px;
@@ -423,6 +427,7 @@ section#shows div.content-frame {
 
 section#shows div.content-frame h2 {
   font-size: 1.75em;
+  color: #119DA4;
 }
 
 section#shows div.content-frame ul {
