@@ -283,7 +283,7 @@ section#mission div.content-frame p {
   text-align: justify;
 }
 
-section#mission div.content-frame ul li.quote {
+section#mission div.content-frame div p.quote {
   font-style: italic;
   text-align: left;
   font-weight: 400;
@@ -295,7 +295,7 @@ section#mission div.content-frame ul li.quote {
   text-align: justify;
 }
 
-section#mission div.content-frame ul li.quote span {
+section#mission div.content-frame div p.quote span {
   font-style: normal;
   font-weight: 600;
 }
