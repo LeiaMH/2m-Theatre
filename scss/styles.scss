@@ -558,6 +558,10 @@ section#footer{
             }
         }
     }
+    //Subtitle lower than navbar.
+    div#subtitle{
+        bottom: 75vh;
+    }
 }
 //------------
 @media only screen and (max-width: 650px) {
@@ -609,6 +613,13 @@ section#footer{
 }
 //------------
 @media only screen and (max-width: 605px) {
+
+    //Subtitle height back.
+    div#subtitle{
+        bottom: 85vh;
+    }
+
+    //Navbar toggle on Mobile.
     body section#navbar{
         height: fit-content;
         width: 100%;

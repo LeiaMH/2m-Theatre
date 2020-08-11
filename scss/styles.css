@@ -677,6 +677,9 @@ section#footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  div#subtitle {
+    bottom: 75vh;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -729,6 +732,9 @@ section#footer {
 }
 
 @media only screen and (max-width: 605px) {
+  div#subtitle {
+    bottom: 85vh;
+  }
   body section#navbar {
     height: -webkit-fit-content;
     height: -moz-fit-content;
