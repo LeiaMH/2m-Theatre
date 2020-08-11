@@ -46,6 +46,9 @@ section#navbar{
         div#logo{
             display: inline-block;
             height: inherit;
+            button{
+                display: none;
+            }
             div{
                 height: inherit;
                 a{
@@ -71,10 +74,10 @@ section#navbar{
         div#nav-list{
             display: inline-block;
             height: inherit;
-            width: 60%;
+            width: 75%;
             div#nav-list-container{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
                 list-style: none;
                 height: inherit;
                     a{
@@ -83,6 +86,7 @@ section#navbar{
                         justify-content: center;
                         text-align: center;
                         padding: 0 20px;
+                        width: fit-content;
                         text-decoration: none;
                         color: $light;
                         transition: font-weight .6s, color .6s, background-color .6s;
@@ -170,7 +174,7 @@ div#subtitle{
 }
 
 /*UP BUTTON*/
-div a i.up{
+div#up-container a i.up{
     color: rgba(255, 255, 255, .5);
     font-size: $base-font-size * 2.5;
     position: fixed;
@@ -179,7 +183,7 @@ div a i.up{
     z-index: 20;
     transition: color .6s;
 }
-div a i.up:hover{
+div#up-container a i.up:hover{
     color: $light;
 }
 
@@ -424,6 +428,27 @@ section#footer{
     }
 }
 //------------
+@media only screen and (max-width: 1200px) {
+    body section#navbar div.nav-container div#nav-list {
+        width: 80%;
+    }
+}
+//------------
+@media only screen and (max-width: 1030px) {
+    body section#navbar div.nav-container {
+        div#logo{
+            a{
+                font-size: $base-font-size;
+            }
+        }
+        div#nav-list{
+            a{
+                font-size: $base-font-size * .75;
+            }
+        }
+    }
+}
+//------------
 @media only screen and (max-width: 1050px) {
     body section#team div.content-frame div.person div.pic{
         width: 250px;
@@ -451,10 +476,16 @@ section#footer{
     }
 }
 //------------
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 855px){
     body section#navbar div.nav-container div#nav-list {
-        width: 75%;
+        width: 100%;
     }
+    body section#navbar div.nav-container{
+        margin: 0 0;
+    }
+}
+//------------
+@media only screen and (max-width: 800px){
     //Snap to: no green frame on sides.
     body section.group-info{
         padding: 0;
@@ -478,7 +509,7 @@ section#footer{
         }
     }
     //Up button redesign on new background.
-    div a i.up{
+    div#up-container a i.up{
         bottom: .45em;
         color: rgba(40, 40, 40, .75);
         font-size: $base-font-size * 1.75;
@@ -490,8 +521,42 @@ section#footer{
         width: 30px;
         height: 30px;
     }
-    div a i.up:hover{
+    div#up-container a i.up:hover{
         color: rgba(40, 40, 40, .75);
+    }
+}
+//------------
+@media only screen and (max-width: 745px){
+     //Navbar to Stacked.
+     body section#navbar {
+        height: 100px;
+        div.nav-container{
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            div#logo div {
+                a{
+                    font-weight: 700;
+                    font-size: $base-font-size * 1.25;
+                    width: 100vw;
+                }
+                a:hover{
+                    color: $light;
+                    background-color: #3b444b;
+                } 
+            }
+            div#nav-list{
+                width: 100%;
+                div#nav-list-container {
+                    a{
+                        width: 100%;
+                        padding: 0 1px;
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
     }
 }
 //------------
@@ -541,16 +606,46 @@ section#footer{
     body section#shows div.content-frame{
             padding: 50px;
     } 
-
-    body section#navbar div.nav-container{
-        div#logo{
-            a{
-                font-size: $base-font-size;
+}
+//------------
+@media only screen and (max-width: 605px) {
+    body section#navbar{
+        height: fit-content;
+        width: 100%;
+        div.nav-container{
+            height: fit-content;
+            div#logo{
+                height: 50px;
+                button{
+                    display: inline-block;
+                    position: absolute;
+                    top: 1.25em;
+                    right: 1.5em;
+                    background-color: transparent;
+                    border: none;
+                    i{
+                        color: rgba(255, 255, 255, .5);
+                        font-size: $base-font-size;
+                    }
+                    i:hover{
+                        color: $light;
+                    }
+                }
+                button:focus {
+                    outline: none;
+                }
             }
-        }
-        div#nav-list{
-            a{
-                font-size: $base-font-size * .75;
+            div#nav-list{
+                height: fit-content;
+                div#nav-list-container.toggle-off{
+                    display: none;
+                }
+                div#nav-list-container.toggle-on{
+                  flex-wrap: wrap;
+                  a{
+                    height: 50px;
+                  }
+                }
             }
         }
     }
@@ -580,42 +675,6 @@ section#footer{
                 font-size: $base-font-size * 1.75;
             }
         } 
-    }
-
-    //Navbar to Stacked.
-    body section#navbar {
-        height: 100px;
-        div.nav-container{
-            display: flex;
-            flex-direction: column;
-            height: 50px;
-            div#logo div {
-                a{
-                    font-weight: 700;
-                    font-size: $base-font-size * 1.25;
-                    width: 100vw;
-                }
-                a:hover{
-                    color: $light;
-                    background-color: #3b444b;
-                } 
-            }
-            div#nav-list{
-                width: 100%;
-                div#nav-list-container {
-                    a{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;
-                    }
-                    a:hover{
-                        color:$light;
-                        background-color: $dark-text;
-                        font-weight: 400;
-                    }
-                }
-            }
-        }
     }
 }
 //------------
@@ -658,10 +717,6 @@ section#footer{
 @media only screen and (max-width: 280px){
    body section#team div.content-frame div.person div.pic{
     max-height: 300px;
-   }
-   body section#navbar div#nav-list div#nav-list-container a{
-       padding-left: 5px !important;
-       padding-right: 5px !important;
    }
 }
 

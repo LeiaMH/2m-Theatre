@@ -50,6 +50,10 @@ section#navbar div.nav-container div#logo {
   height: inherit;
 }
 
+section#navbar div.nav-container div#logo button {
+  display: none;
+}
+
 section#navbar div.nav-container div#logo div {
   height: inherit;
 }
@@ -85,16 +89,16 @@ section#navbar div.nav-container div#logo div a:hover {
 section#navbar div.nav-container div#nav-list {
   display: inline-block;
   height: inherit;
-  width: 60%;
+  width: 75%;
 }
 
 section#navbar div.nav-container div#nav-list div#nav-list-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   height: inherit;
 }
@@ -112,6 +116,9 @@ section#navbar div.nav-container div#nav-list div#nav-list-container a {
           justify-content: center;
   text-align: center;
   padding: 0 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-decoration: none;
   color: #d7d7d7;
   -webkit-transition: font-weight .6s, color .6s, background-color .6s;
@@ -213,7 +220,7 @@ div#subtitle div#sub-wrapper h2 {
 }
 
 /*UP BUTTON*/
-div a i.up {
+div#up-container a i.up {
   color: rgba(255, 255, 255, 0.5);
   font-size: 40px;
   position: fixed;
@@ -224,7 +231,7 @@ div a i.up {
   transition: color .6s;
 }
 
-div a i.up:hover {
+div#up-container a i.up:hover {
   color: #d7d7d7;
 }
 
@@ -543,6 +550,21 @@ section#footer {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  body section#navbar div.nav-container div#nav-list {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  body section#navbar div.nav-container div#logo a {
+    font-size: 16px;
+  }
+  body section#navbar div.nav-container div#nav-list a {
+    font-size: 12px;
+  }
+}
+
 @media only screen and (max-width: 1050px) {
   body section#team div.content-frame div.person div.pic {
     width: 250px;
@@ -565,10 +587,16 @@ section#footer {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 855px) {
   body section#navbar div.nav-container div#nav-list {
-    width: 75%;
+    width: 100%;
   }
+  body section#navbar div.nav-container {
+    margin: 0 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   body section.group-info {
     padding: 0;
   }
@@ -590,7 +618,7 @@ section#footer {
     width: 100%;
     border-radius: 0;
   }
-  div a i.up {
+  div#up-container a i.up {
     bottom: .45em;
     color: rgba(40, 40, 40, 0.75);
     font-size: 28px;
@@ -608,8 +636,46 @@ section#footer {
     width: 30px;
     height: 30px;
   }
-  div a i.up:hover {
+  div#up-container a i.up:hover {
     color: rgba(40, 40, 40, 0.75);
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  body section#navbar {
+    height: 100px;
+  }
+  body section#navbar div.nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50px;
+  }
+  body section#navbar div.nav-container div#logo div a {
+    font-weight: 700;
+    font-size: 20px;
+    width: 100vw;
+  }
+  body section#navbar div.nav-container div#logo div a:hover {
+    color: #d7d7d7;
+    background-color: #3b444b;
+  }
+  body section#navbar div.nav-container div#nav-list {
+    width: 100%;
+  }
+  body section#navbar div.nav-container div#nav-list div#nav-list-container a {
+    width: 100%;
+    padding: 0 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -660,11 +726,55 @@ section#footer {
   body section#shows div.content-frame {
     padding: 50px;
   }
-  body section#navbar div.nav-container div#logo a {
+}
+
+@media only screen and (max-width: 605px) {
+  body section#navbar {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  body section#navbar div.nav-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body section#navbar div.nav-container div#logo {
+    height: 50px;
+  }
+  body section#navbar div.nav-container div#logo button {
+    display: inline-block;
+    position: absolute;
+    top: 1.25em;
+    right: 1.5em;
+    background-color: transparent;
+    border: none;
+  }
+  body section#navbar div.nav-container div#logo button i {
+    color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
   }
-  body section#navbar div.nav-container div#nav-list a {
-    font-size: 12px;
+  body section#navbar div.nav-container div#logo button i:hover {
+    color: #d7d7d7;
+  }
+  body section#navbar div.nav-container div#logo button:focus {
+    outline: none;
+  }
+  body section#navbar div.nav-container div#nav-list {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body section#navbar div.nav-container div#nav-list div#nav-list-container.toggle-off {
+    display: none;
+  }
+  body section#navbar div.nav-container div#nav-list div#nav-list-container.toggle-on {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body section#navbar div.nav-container div#nav-list div#nav-list-container.toggle-on a {
+    height: 50px;
   }
 }
 
@@ -689,45 +799,6 @@ section#footer {
   }
   body section#contacts div.content-frame ul li a {
     font-size: 28px;
-  }
-  body section#navbar {
-    height: 100px;
-  }
-  body section#navbar div.nav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 50px;
-  }
-  body section#navbar div.nav-container div#logo div a {
-    font-weight: 700;
-    font-size: 20px;
-    width: 100vw;
-  }
-  body section#navbar div.nav-container div#logo div a:hover {
-    color: #d7d7d7;
-    background-color: #3b444b;
-  }
-  body section#navbar div.nav-container div#nav-list {
-    width: 100%;
-  }
-  body section#navbar div.nav-container div#nav-list div#nav-list-container a {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  body section#navbar div.nav-container div#nav-list div#nav-list-container a:hover {
-    color: #d7d7d7;
-    background-color: #282828;
-    font-weight: 400;
   }
 }
 
@@ -764,10 +835,6 @@ section#footer {
 @media only screen and (max-width: 280px) {
   body section#team div.content-frame div.person div.pic {
     max-height: 300px;
-  }
-  body section#navbar div#nav-list div#nav-list-container a {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
   }
 }
 

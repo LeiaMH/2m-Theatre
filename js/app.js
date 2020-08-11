@@ -1,3 +1,4 @@
+//'What People Say' Section - Scroll Reveal
 var slideLeft = {
     mobile: false,
     distance: '20%',
@@ -24,3 +25,18 @@ ScrollReveal().reveal('.quote-reveal4',  { ...slideRight, delay: 1200, });
 ScrollReveal().reveal('.quote-reveal5',  { ...slideLeft, delay: 1500, });
 ScrollReveal().reveal('.quote-reveal6',  { ...slideRight, delay: 1800, });
 ScrollReveal().reveal('.quote-reveal7',  { ...slideLeft, delay: 2100, });
+
+
+//Toggle Navbar
+const toggle = document.getElementById('toggle-button');
+
+const elementToToggle = document.getElementById("nav-list-container")
+let currentToggleClass = elementToToggle.classList;
+
+toggle.addEventListener('click', () => {
+    if (currentToggleClass == 'toggle-off') {
+        elementToToggle.className = 'toggle-on';
+     } else if (currentToggleClass == 'toggle-on') {
+        elementToToggle.className = 'toggle-off';
+     };
+});
