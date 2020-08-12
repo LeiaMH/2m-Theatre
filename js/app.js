@@ -30,13 +30,22 @@ ScrollReveal().reveal('.quote-reveal7',  { ...slideLeft, delay: 2100, });
 //Toggle Navbar
 const toggle = document.getElementById('toggle-button');
 
-const elementToToggle = document.getElementById("nav-list-container")
-let currentToggleClass = elementToToggle.classList;
+const navMenu = document.getElementById("nav-list-container")
+let currentMenuClass = navMenu.classList;
+
+const navButton = document.getElementById("nav-button")
+let currentButtonClass = navButton.classList;
 
 toggle.addEventListener('click', () => {
-    if (currentToggleClass == 'toggle-off') {
-        elementToToggle.className = 'toggle-on';
-     } else if (currentToggleClass == 'toggle-on') {
-        elementToToggle.className = 'toggle-off';
+    if (currentMenuClass == 'toggle-off') {
+        navMenu.className = 'toggle-on';
+     } else if (currentMenuClass == 'toggle-on') {
+        navMenu.className = 'toggle-off';
      };
+
+    if (currentButtonClass == 'fas fa-bars') {
+       navButton.className = 'fas fa-times';
+    } else if (currentButtonClass == 'fas fa-times') {
+       navButton.className = 'fas fa-bars';
+    }; 
 });
