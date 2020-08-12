@@ -64,13 +64,16 @@ section#navbar div.nav-container div#logo div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font-size: 24px;
   text-decoration: none;
@@ -84,6 +87,34 @@ section#navbar div.nav-container div#logo div a {
 section#navbar div.nav-container div#logo div a:hover {
   color: #282828;
   background-color: #507255;
+}
+
+section#navbar div.nav-container div#logo div a:hover text, section#navbar div.nav-container div#logo div a:hover polygon, section#navbar div.nav-container div#logo div a:hover path {
+  fill: #282828;
+}
+
+section#navbar div.nav-container div#logo div a:hover circle {
+  stroke: #282828;
+}
+
+section#navbar div.nav-container div#logo div a svg {
+  padding-right: 2.5px;
+  width: 55px;
+  height: 55px;
+}
+
+section#navbar div.nav-container div#logo div circle {
+  stroke: #d7d7d7;
+  stroke-width: 10;
+  fill: transparent;
+  -webkit-transition: stroke .6s;
+  transition: stroke .6s;
+}
+
+section#navbar div.nav-container div#logo div text, section#navbar div.nav-container div#logo div polygon, section#navbar div.nav-container div#logo div path {
+  fill: #d7d7d7;
+  -webkit-transition: fill .6s;
+  transition: fill .6s;
 }
 
 section#navbar div.nav-container div#nav-list {
@@ -556,7 +587,7 @@ section#footer {
   }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1080px) {
   body section#navbar div.nav-container div#logo a {
     font-size: 16px;
   }
@@ -587,7 +618,7 @@ section#footer {
   }
 }
 
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 885px) {
   body section#navbar div.nav-container div#nav-list {
     width: 100%;
   }
@@ -639,9 +670,6 @@ section#footer {
   div#up-container a i.up:hover {
     color: rgba(40, 40, 40, 0.75);
   }
-}
-
-@media only screen and (max-width: 745px) {
   body section#navbar {
     height: 100px;
   }
@@ -663,6 +691,12 @@ section#footer {
   body section#navbar div.nav-container div#logo div a:hover {
     color: #d7d7d7;
     background-color: #3b444b;
+  }
+  body section#navbar div.nav-container div#logo div a:hover text, body section#navbar div.nav-container div#logo div a:hover polygon, body section#navbar div.nav-container div#logo div a:hover path {
+    fill: #d7d7d7;
+  }
+  body section#navbar div.nav-container div#logo div a:hover circle {
+    stroke: #d7d7d7;
   }
   body section#navbar div.nav-container div#nav-list {
     width: 100%;
