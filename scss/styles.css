@@ -170,6 +170,8 @@ section#pictureHero {
           filter: opacity(90%);
   height: 100vh;
   background-position: center;
+  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
 }
 
 /*PICTURES*/
@@ -180,6 +182,8 @@ section#picture1 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
+  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
 }
 
 section#picture2 {
@@ -189,6 +193,8 @@ section#picture2 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
+  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
 }
 
 section#picture3 {
@@ -198,6 +204,8 @@ section#picture3 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
+  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
 }
 
 section#picture4 {
@@ -207,6 +215,8 @@ section#picture4 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
+  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
 }
 
 div#subtitle {
