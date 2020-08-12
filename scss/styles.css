@@ -170,8 +170,8 @@ section#pictureHero {
           filter: opacity(90%);
   height: 100vh;
   background-position: center;
-  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
-          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+  -webkit-box-shadow: inset 0px 0px 80px 10px #282828;
+          box-shadow: inset 0px 0px 80px 10px #282828;
 }
 
 /*PICTURES*/
@@ -182,8 +182,8 @@ section#picture1 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
-  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
-          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+  -webkit-box-shadow: inset 0px 0px 80px 10px #282828;
+          box-shadow: inset 0px 0px 80px 10px #282828;
 }
 
 section#picture2 {
@@ -193,8 +193,8 @@ section#picture2 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
-  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
-          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+  -webkit-box-shadow: inset 0px 0px 80px 10px #282828;
+          box-shadow: inset 0px 0px 80px 10px #282828;
 }
 
 section#picture3 {
@@ -204,8 +204,8 @@ section#picture3 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
-  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
-          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+  -webkit-box-shadow: inset 0px 0px 80px 10px #282828;
+          box-shadow: inset 0px 0px 80px 10px #282828;
 }
 
 section#picture4 {
@@ -215,8 +215,8 @@ section#picture4 {
   -webkit-filter: opacity(90%);
           filter: opacity(90%);
   background-position: center;
-  -webkit-box-shadow: inset 0px 0px 80px 20px #1c1c1c;
-          box-shadow: inset 0px 0px 80px 20px #1c1c1c;
+  -webkit-box-shadow: inset 0px 0px 80px 10px #282828;
+          box-shadow: inset 0px 0px 80px 10px #282828;
 }
 
 div#subtitle {
