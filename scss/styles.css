@@ -918,11 +918,4 @@ section#footer {
     max-height: 300px;
   }
 }
-
-@media only screen and (min-width: 740px) {
-  body div#subtitle div#sub-wrapper h1, body div#subtitle div#sub-wrapper h2 {
-    -webkit-filter: blur(0.25px);
-            filter: blur(0.25px);
-  }
-}
 /*# sourceMappingURL=styles.css.map */

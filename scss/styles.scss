@@ -784,12 +784,3 @@ section#footer{
     max-height: 300px;
    }
 }
-
-//------min-width------
-@media only screen and (min-width: 740px) {
-    body div#subtitle div#sub-wrapper {
-         h1, h2 {
-            filter: blur(.25px);
-        }
-    }
-}
