@@ -366,6 +366,13 @@ section#team {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section#team div.content-frame {
@@ -379,17 +386,37 @@ section#team div.content-frame {
   border-radius: 5px;
 }
 
-section#team h2 {
+section#team div.content-frame div.frame1 {
+  color: #282828;
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.5;
+}
+
+section#team div.content-frame div.frame1 h2 {
   font-size: 1.75em;
+  color: #119DA4;
   margin-bottom: 30px;
+}
+
+section#team div.content-frame div.frame1 p {
+  padding-bottom: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+section#team div.content-frame h2 {
+  font-size: 1.75em;
+  margin-bottom: 40px;
   color: #119DA4;
 }
 
-section#team div.person:not(:last-child) {
+section#team div.content-frame div.person:not(:last-child) {
   margin: 0px 0px 60px 0px;
 }
 
-section#team div.person {
+section#team div.content-frame div.person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +429,7 @@ section#team div.person {
           justify-content: space-between;
 }
 
-section#team div.person p {
+section#team div.content-frame div.person p {
   text-align: justify;
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
@@ -411,25 +438,25 @@ section#team div.person p {
   font-size: 1.25em;
 }
 
-section#team div.person p span.name {
+section#team div.content-frame div.person p span.name {
   font-size: 1.25em;
   font-weight: 500;
   color: #3b444b;
 }
 
-section#team div.person p span.italic {
+section#team div.content-frame div.person p span.italic {
   font-style: italic;
 }
 
-section#team div.person p:nth-child(odd) {
+section#team div.content-frame div.person p:nth-child(odd) {
   padding: 0 40px 0 0;
 }
 
-section#team div.person p:nth-child(even) {
+section#team div.content-frame div.person p:nth-child(even) {
   padding: 0 0 0 40px;
 }
 
-section#team div.person div.pic {
+section#team div.content-frame div.person div.pic {
   border: 1px solid transparent;
   border-radius: 5px;
   width: 35%;
@@ -438,7 +465,7 @@ section#team div.person div.pic {
           box-shadow: 0px 0px 20px 2px #444;
 }
 
-section#team div.person div.pic img {
+section#team div.content-frame div.person div.pic img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -576,22 +603,19 @@ section#footer {
 @media only screen and (max-width: 1200px) {
   body section.group-info div.content-frame {
     width: 90%;
-    margin: 0px;
+    margin: 30px 0px;
     padding: 60px;
   }
   body section#team div.content-frame {
     width: 90%;
-    margin: 0px;
+    margin: 30px 0px;
     padding: 60px;
   }
   body section#shows div.content-frame {
     width: 90%;
-    margin: 0px;
+    margin-top: 30px;
     padding: 60px;
   }
-}
-
-@media only screen and (max-width: 1200px) {
   body section#navbar div.nav-container div#nav-list {
     width: 80%;
   }
@@ -644,6 +668,7 @@ section#footer {
   body section.group-info div.content-frame {
     width: 100%;
     border-radius: 0;
+    margin: 0;
   }
   body section#team {
     padding: 0;
@@ -651,6 +676,7 @@ section#footer {
   body section#team div.content-frame {
     width: 100%;
     border-radius: 0;
+    margin: 0;
   }
   body section#shows {
     padding: 0;
@@ -658,6 +684,7 @@ section#footer {
   body section#shows div.content-frame {
     width: 100%;
     border-radius: 0;
+    margin: 0;
   }
   div#up-container a i.up {
     bottom: .45em;
@@ -858,6 +885,9 @@ section#footer {
     max-height: 400px;
   }
   body section#team div.content-frame div.person p {
+    font-size: 16px;
+  }
+  body section#team div.content-frame div.frame1 p {
     font-size: 16px;
   }
   body section.group-info div.content-frame h3 {

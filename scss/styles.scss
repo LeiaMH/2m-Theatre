@@ -284,6 +284,8 @@ section#team{
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     div.content-frame{
         width: 85%;
         max-width: 1000px;
@@ -292,14 +294,30 @@ section#team{
         background-color: $light-background;
         box-shadow: 0px 0px 30px 3px #000;
         border-radius: 5px;
-        } 
+        div.frame1 {
+            color: $dark-text;
+            font-family: $font;
+            line-height: 1.5; 
+            h2{
+                font-size: 1.75em;
+                color: #119DA4;
+                margin-bottom: 30px;
+            } 
+            p{
+                padding-bottom: 50px;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: 200;
+                font-size: 1.2em;
+                text-align: justify;
+            } 
+        }
         h2 {
             font-size: 1.75em;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             color: #119DA4;
         }
         div.person:not(:last-child){
-            margin: 0px 0px 60px 0px;
+             margin: 0px 0px 60px 0px;
         } 
         div.person{
             display: flex;
@@ -307,7 +325,7 @@ section#team{
             justify-content: space-between;
             p{
                 text-align: justify;
-                font-family: 'Oswald', sans-serif;//$font;
+                font-family: 'Oswald', sans-serif;
                 font-weight: 200;
                 width: 60%;
                 line-height: 1.5;
@@ -341,7 +359,8 @@ section#team{
                 }
             }
         }
-}
+    }    
+}    
 
 /*SHOWS*/
 section#shows{
@@ -440,22 +459,19 @@ section#footer{
 @media only screen and (max-width: 1200px) {
     body section.group-info div.content-frame{
         width: 90%;
-        margin: 0px;
+        margin: 30px 0px;
         padding: 60px;
     }
     body section#team div.content-frame{
         width: 90%;
-        margin: 0px;
+        margin: 30px 0px;
         padding: 60px;
     }
     body section#shows div.content-frame{
         width: 90%;
-        margin: 0px;
+        margin-top: 30px;
         padding: 60px;
     }
-}
-//------------
-@media only screen and (max-width: 1200px) {
     body section#navbar div.nav-container div#nav-list {
         width: 80%;
     }
@@ -519,6 +535,7 @@ section#footer{
         div.content-frame{
             width: 100%;
             border-radius: 0;
+            margin: 0;
         }
     }
     body section#team{
@@ -526,6 +543,7 @@ section#footer{
         div.content-frame{
             width: 100%;
             border-radius: 0;
+            margin: 0;
         }
     } 
     body section#shows{
@@ -533,6 +551,7 @@ section#footer{
         div.content-frame{
             width: 100%;
             border-radius: 0;
+            margin: 0;
         }
     }
     //Up button redesign on new background.
@@ -729,6 +748,9 @@ section#footer{
         p{
             font-size: $base-font-size;
         }
+    }
+    body section#team div.content-frame div.frame1 p{
+        font-size: $base-font-size;
     }
     body section.group-info div.content-frame{
         h3{
