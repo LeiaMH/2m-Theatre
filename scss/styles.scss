@@ -182,13 +182,29 @@ div#subtitle{
         div#sub-wrapper{
             display: flex;
             flex-direction: column;
+            // a svg{
+            //     padding-right: 2.5px;
+            //     width: 200px;
+            //     height: 200px;
+            // }
+            // circle{
+            //     stroke:#eff1f3;
+            //     stroke-width:10;
+            //     fill:transparent;
+            //     transition:stroke .6s;
+            // }
+            // & text,polygon,path{
+            //     fill: #eff1f3;
+            //     transition:fill .6s;
+            // }
             h1{
-                font-family: $font;
+                font-family: rgba(187, 187, 187, 1);;
                 letter-spacing: .03em;
                 font-weight: 800;
                 font-size: 5em;
                 color: #eff1f3;
                 text-shadow: 0px 0px 10px #000;
+                font-family: $font;
              }
              h2{
                font-family: $font;
@@ -256,22 +272,7 @@ section.group-info{
             font-size: 1.2em;
             text-align: justify;
         }
-        div p.quote{
-            font-style: italic;
-            text-align: left;
-            font-weight: 400;
-            color: $dark-text;
-            padding: 10px;
-            list-style: none;
-            font-family: 'Roboto Condensed', sans-serif;//$font;
-            font-size: 1.2em;
-            text-align: justify;
-            span{
-                font-style: normal;
-                font-weight: 600;  
-            }
-        }
-        }
+    }
 }
 
 
@@ -361,7 +362,109 @@ section#team{
         }
     }    
 }    
-
+/*WHAT PEOPLE SAY*/
+section#whatPeopleSay{
+    background-color: $dark;
+    color: $dark-text;
+    font-family: $font;
+    padding: 30px;
+    position: relative;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    div.content-frame{
+        width: 85%;
+        max-width: 1000px;
+        height: fit-content;
+        margin: 100px;
+        padding: 80px;
+        background-color: $light-background;
+        box-shadow: 0px 0px 30px 3px #000;
+        border-radius: 5px;
+        h2{
+            font-family: $font;
+            padding-bottom: 10px;
+            font-size: 1.75em;
+            color: #119DA4;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            p.quote{
+                font-style: italic;
+                text-align: left;
+                font-weight: 400;
+                width: 70%;
+                color: $dark-text;
+                list-style: none;
+                font-family: 'Roboto Condensed', sans-serif;//$font;
+                font-size: 1.5em;
+                display: none;
+                padding: 80px;
+                text-align: center;
+                i.fa-quote-left{
+                    color: #e3395b;//#ED3E73;
+                    font-size: $base-font-size;
+                    position: relative;
+                    bottom: 10px;
+                    right: 5px;
+                }
+                i.fa-quote-right{
+                    color: #e3395b;//#ED3E73;
+                    font-size: $base-font-size;
+                    position: relative;
+                    top: 10px;
+                    left: 5px;
+                }
+            }
+        }
+        div.controlles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #717171;
+            font-weight: bold;
+            border-radius: 3px;
+            font-size: 1.5em;
+          }
+        .next {
+          position: absolute;
+          right: 20%;
+          border-radius: 3px;
+        }
+        .prev{
+          left: 20%; 
+        }
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+    }
+}    
 /*SHOWS*/
 section#shows{
     background-color: $dark;
@@ -376,7 +479,7 @@ section#shows{
         width: 85%;
         max-width: 1000px;
         height: fit-content;
-        margin: 100px 100px 0px 100px;
+        margin: 100px;
         padding: 80px;
         background-color: $light-background;
         box-shadow: 0px 0px 30px 3px #000;
@@ -396,6 +499,94 @@ section#shows{
         }  
 }
 
+/*GALLERY*/
+section#gallery{
+    padding: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: fit-content;
+    div.content-frame{
+        width: 85%;
+        max-width: 1000px;
+        height: fit-content;
+        margin: 100px;
+        padding: 80px;
+        background-color: $light-background;
+        box-shadow: 0px 0px 30px 3px #000;
+        border-radius: 5px;
+        font-family: $font;
+        h2{
+            font-size: 1.75em;
+            color: #119DA4;
+            padding-bottom: 30px;
+        }
+        div.row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            .column {
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+                img {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    width: 100%;
+                    transition: opacity .6s;
+                    cursor: pointer;
+                  }
+                img:hover{
+                    opacity: 0.7;
+                }
+              }
+        }
+    }
+}
+
+/* Lightbox/Modal */
+section#gallery div.modal {
+    display: none;
+    position: fixed;
+    z-index: 25;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .75);
+    img {
+        margin-top: 8px;  
+    }
+  }
+  .modal-content {
+    position: relative;
+    background-color: #fefefe00;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  .close {
+    color: white;
+    position: fixed;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 26;
+  }
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .slides {
+    display: block;
+  }
+
 /*CONTACTS*/
 section#contacts{
     background-color: $dark;
@@ -406,7 +597,7 @@ section#contacts{
     justify-content: center;
     div.content-frame{
         z-index: 2;
-        width: 75%;
+        width: 85%;
         margin: 30px;
         padding: 30px;
         } 
@@ -472,6 +663,16 @@ section#footer{
         margin-top: 30px;
         padding: 60px;
     }
+    section#gallery div.content-frame{
+        width: 90%;
+        margin-top: 30px;
+        padding: 60px;
+    }
+    body section#whatPeopleSay div.content-frame{
+        width: 90%;
+        margin-top: 30px;
+        padding: 60px;
+    }
     body section#navbar div.nav-container div#nav-list {
         width: 80%;
     }
@@ -498,6 +699,14 @@ section#footer{
         height: 350px;
     }
     
+}
+//------------
+@media only screen and (max-width: 930px) {
+    body section#whatPeopleSay div.content-frame div p.quote{
+        width: auto;
+
+    }
+
 }
 //------------
 @media only screen and (max-width: 900px) {
@@ -554,6 +763,33 @@ section#footer{
             margin: 0;
         }
     }
+    body section#whatPeopleSay{
+        padding:0;
+        div.content-frame{
+            width: 100%;
+            border-radius: 0;
+            margin: 0;
+            .next {
+                right: 10%;
+            }
+            .prev{
+                left: 10%; 
+            }    
+        }
+    }
+    body section#gallery{
+        padding: 0;
+        div.content-frame{
+            width: 100%;
+            border-radius: 0;
+            margin: 0;
+            div.row div.column {
+                flex: 50%;
+                max-width: 50%;
+              }
+        }
+    } 
+
     //Up button redesign on new background.
     div#up-container a i.up{
         bottom: .45em;
@@ -648,17 +884,23 @@ section#footer{
     } 
 
     body section.group-info div.content-frame{
-            padding: 50px;
-            p{
-              font-size: 1.25em;
-            } 
+        padding: 50px;
+        p{
+          font-size: 1.25em;
+        } 
     }
     body section#team div.content-frame{
-            padding: 50px;
+        padding: 50px;
     }
 
     body section#shows div.content-frame{
-            padding: 50px;
+        padding: 50px;
+    }
+    body section#gallery div.content-frame{
+        padding: 50px;
+    } 
+    body section#whatPeopleSay div.content-frame{
+        padding: 50px;
     } 
 }
 //------------
@@ -711,6 +953,12 @@ section#footer{
             }
         }
     }
+    body section#gallery div.content-frame{
+        div.row div.column {
+            flex: 100%;
+            max-width: 100%;
+          }  
+    }
 }
 //------------
 @media only screen and (max-width: 480px) {
@@ -724,6 +972,15 @@ section#footer{
     body section#shows div.content-frame{
         padding: 25px;
     }
+    body section#gallery div.content-frame{
+        padding: 25px;
+    }
+    body section#whatPeopleSay div.content-frame{
+        padding: 25px;
+        div p.quote{
+            font-size: $base-font-size * 1.25;
+        }
+    }  
 
     //Contacts resized.
     body section#contacts div.content-frame{
@@ -762,6 +1019,11 @@ section#footer{
     } 
     body section#shows div.content-frame ul li{
         font-size: $base-font-size;
+    }
+    body section#whatPeopleSay div.content-frame {
+        div p.quote{
+            font-size: $base-font-size;
+        }
     }
 }
 //------------

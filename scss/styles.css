@@ -244,12 +244,13 @@ div#subtitle div#sub-wrapper {
 }
 
 div#subtitle div#sub-wrapper h1 {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: #bbbbbb;
   letter-spacing: .03em;
   font-weight: 800;
   font-size: 5em;
   color: #eff1f3;
   text-shadow: 0px 0px 10px #000;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 div#subtitle div#sub-wrapper h2 {
@@ -334,23 +335,6 @@ section.group-info div.content-frame p {
   font-weight: 200;
   font-size: 1.2em;
   text-align: justify;
-}
-
-section.group-info div.content-frame div p.quote {
-  font-style: italic;
-  text-align: left;
-  font-weight: 400;
-  color: #282828;
-  padding: 10px;
-  list-style: none;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2em;
-  text-align: justify;
-}
-
-section.group-info div.content-frame div p.quote span {
-  font-style: normal;
-  font-weight: 600;
 }
 
 /*THE TEAM*/
@@ -473,6 +457,145 @@ section#team div.content-frame div.person div.pic img {
   border-radius: 5px;
 }
 
+/*WHAT PEOPLE SAY*/
+section#whatPeopleSay {
+  background-color: #507255;
+  color: #282828;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 30px;
+  position: relative;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+}
+
+section#whatPeopleSay div.content-frame {
+  width: 85%;
+  max-width: 1000px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 100px;
+  padding: 80px;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0px 0px 30px 3px #000;
+          box-shadow: 0px 0px 30px 3px #000;
+  border-radius: 5px;
+}
+
+section#whatPeopleSay div.content-frame h2 {
+  font-family: "Libre Franklin", sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.75em;
+  color: #119DA4;
+}
+
+section#whatPeopleSay div.content-frame div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#whatPeopleSay div.content-frame div p.quote {
+  font-style: italic;
+  text-align: left;
+  font-weight: 400;
+  width: 70%;
+  color: #282828;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+section#whatPeopleSay div.content-frame div p.quote i.fa-quote-left {
+  color: #e3395b;
+  font-size: 16px;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+}
+
+section#whatPeopleSay div.content-frame div p.quote i.fa-quote-right {
+  color: #e3395b;
+  font-size: 16px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+
+section#whatPeopleSay div.content-frame div.controlles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+section#whatPeopleSay div.content-frame .prev, section#whatPeopleSay div.content-frame .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #717171;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 1.5em;
+}
+
+section#whatPeopleSay div.content-frame .next {
+  position: absolute;
+  right: 20%;
+  border-radius: 3px;
+}
+
+section#whatPeopleSay div.content-frame .prev {
+  left: 20%;
+}
+
+section#whatPeopleSay div.content-frame .dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+section#whatPeopleSay div.content-frame .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+section#whatPeopleSay div.content-frame .active, section#whatPeopleSay div.content-frame .dot:hover {
+  background-color: #717171;
+}
+
 /*SHOWS*/
 section#shows {
   background-color: #507255;
@@ -497,7 +620,7 @@ section#shows div.content-frame {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 100px 100px 0px 100px;
+  margin: 100px;
   padding: 80px;
   background-color: #f5f5f5;
   -webkit-box-shadow: 0px 0px 30px 3px #000;
@@ -520,6 +643,120 @@ section#shows div.content-frame ul li {
   font-size: 1.25em;
 }
 
+/*GALLERY*/
+section#gallery {
+  padding: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+section#gallery div.content-frame {
+  width: 85%;
+  max-width: 1000px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 100px;
+  padding: 80px;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0px 0px 30px 3px #000;
+          box-shadow: 0px 0px 30px 3px #000;
+  border-radius: 5px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section#gallery div.content-frame h2 {
+  font-size: 1.75em;
+  color: #119DA4;
+  padding-bottom: 30px;
+}
+
+section#gallery div.content-frame div.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+section#gallery div.content-frame div.row .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+section#gallery div.content-frame div.row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+  cursor: pointer;
+}
+
+section#gallery div.content-frame div.row .column img:hover {
+  opacity: 0.7;
+}
+
+/* Lightbox/Modal */
+section#gallery div.modal {
+  display: none;
+  position: fixed;
+  z-index: 25;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+section#gallery div.modal img {
+  margin-top: 8px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe00;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 26;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slides {
+  display: block;
+}
+
 /*CONTACTS*/
 section#contacts {
   background-color: #507255;
@@ -536,7 +773,7 @@ section#contacts {
 
 section#contacts div.content-frame {
   z-index: 2;
-  width: 75%;
+  width: 85%;
   margin: 30px;
   padding: 30px;
 }
@@ -616,6 +853,16 @@ section#footer {
     margin-top: 30px;
     padding: 60px;
   }
+  section#gallery div.content-frame {
+    width: 90%;
+    margin-top: 30px;
+    padding: 60px;
+  }
+  body section#whatPeopleSay div.content-frame {
+    width: 90%;
+    margin-top: 30px;
+    padding: 60px;
+  }
   body section#navbar div.nav-container div#nav-list {
     width: 80%;
   }
@@ -634,6 +881,12 @@ section#footer {
   body section#team div.content-frame div.person div.pic {
     width: 250px;
     height: 350px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  body section#whatPeopleSay div.content-frame div p.quote {
+    width: auto;
   }
 }
 
@@ -685,6 +938,34 @@ section#footer {
     width: 100%;
     border-radius: 0;
     margin: 0;
+  }
+  body section#whatPeopleSay {
+    padding: 0;
+  }
+  body section#whatPeopleSay div.content-frame {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  body section#whatPeopleSay div.content-frame .next {
+    right: 10%;
+  }
+  body section#whatPeopleSay div.content-frame .prev {
+    left: 10%;
+  }
+  body section#gallery {
+    padding: 0;
+  }
+  body section#gallery div.content-frame {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  body section#gallery div.content-frame div.row div.column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
   }
   div#up-container a i.up {
     bottom: .45em;
@@ -800,6 +1081,12 @@ section#footer {
   body section#shows div.content-frame {
     padding: 50px;
   }
+  body section#gallery div.content-frame {
+    padding: 50px;
+  }
+  body section#whatPeopleSay div.content-frame {
+    padding: 50px;
+  }
 }
 
 @media only screen and (max-width: 605px) {
@@ -854,6 +1141,12 @@ section#footer {
   body section#navbar div.nav-container div#nav-list div#nav-list-container.toggle-on a {
     height: 50px;
   }
+  body section#gallery div.content-frame div.row div.column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -865,6 +1158,15 @@ section#footer {
   }
   body section#shows div.content-frame {
     padding: 25px;
+  }
+  body section#gallery div.content-frame {
+    padding: 25px;
+  }
+  body section#whatPeopleSay div.content-frame {
+    padding: 25px;
+  }
+  body section#whatPeopleSay div.content-frame div p.quote {
+    font-size: 20px;
   }
   body section#contacts div.content-frame {
     padding: 0;
@@ -897,6 +1199,9 @@ section#footer {
     font-size: 16px;
   }
   body section#shows div.content-frame ul li {
+    font-size: 16px;
+  }
+  body section#whatPeopleSay div.content-frame div p.quote {
     font-size: 16px;
   }
 }
